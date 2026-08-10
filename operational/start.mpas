@@ -1,0 +1,124 @@
+#!/bin/bash
+
+# ------------------------------------------------------------------------------
+# Script: start.mpas
+# Purpose: Submit MPAS forecast job chain to SLURM
+# Author: Radi AJJAJI for UAE-AF NWP Centre
+# Modified: Requires CYCLE argument as input
+# ------------------------------------------------------------------------------
+
+# --------------------------
+# Validate input argument(s)
+# --------------------------
+if [ $# -ne 1 ]; then
+  echo "Usage: $0 <CYCLE>"
+  echo "Example: $0 00"
+  exit 1
+fi
+
+export CYCLE="$1"
+export TYPE_CHART=bands
+
+# --------------------------
+# Load user environment
+# --------------------------
+source /scratch/lus/$USER/.bash_profile
+
+# --------------------------
+# Set date and time variables
+# --------------------------
+export YEAR=$(TZ=":Etc/GMT-4" date '+%Y')
+export MONTH=$(TZ=":Etc/GMT-4" date '+%m')
+export DAY=$(TZ=":Etc/GMT-4" date '+%d')
+
+NEW_DATE="${YEAR}${MONTH}${DAY}${CYCLE}"
+
+# --------------------------
+# Update environment settings
+# --------------------------
+MODELENV="$HOME/model/slurm/modelenv.sh"
+OLD_DATE=$(grep START_DATE "$MODELENV" | awk -F '=' '{print $2}')
+
+# Replace old date with new date and update forecast length
+sed -i "s/${OLD_DATE}/${NEW_DATE}/" "$MODELENV"
+sed -i 's/export FORECAST_LENGTH=[0-9]*/export FORECAST_LENGTH=168/' "$MODELENV"
+
+# --------------------------
+# Apply environment variables
+# --------------------------
+. "$MODELENV"
+
+# --------------------------
+# Clean SLURM queues
+# --------------------------
+#scancel -u arw
+#scancel -p opr
+#scancel -p opr
+#scancel -p opr
+
+# --------------------------
+# Clean logs
+# --------------------------
+export LOG="$MODEL_ROOT/log"
+export LASTLOG="$MODEL_ROOT/lastlog"
+
+find "$LASTLOG" -type f -delete
+find "$LASTLOG" -type d -delete
+
+mv "$LOG" "$LASTLOG"
+mkdir -p "$LOG/assim" "$LOG/var"
+
+# --------------------------
+# Clean run directories
+# --------------------------
+CLEAN_ID=$(sbatch --parsable "$MODEL_ROOT/slurm/clean_before_run.sh")
+
+# --------------------------
+# Submit MPAS workflow jobs
+# --------------------------
+OBS_ID=$(sbatch --parsable "$MODEL_ROOT/slurm/jedi_obs.sh")
+UNGR_ID=$(sbatch --parsable --dependency=afterany:$CLEAN_ID "$MODEL_ROOT/slurm/ungrib.mpas.sh")
+INIT_ID=$(sbatch --parsable --dependency=afterok:$UNGR_ID "$MODEL_ROOT/slurm/init.mpas.sh")
+MPAS_ID_RES=$(sbatch --parsable --dependency=afterok:$INIT_ID "$MODEL_ROOT/slurm/run.mpas.sh")
+MPAS_ID=$(sbatch --parsable --dependency=afterany:$MPAS_ID_RES "$MODEL_ROOT/slurm/run.mpas.sh")
+
+MPWF_ID=$(sbatch --parsable --dependency=afterany:$MPAS_ID "$MODEL_ROOT/slurm/mpas2wrf.sh")
+MPWF_ID=$(sbatch --parsable --dependency=afterany:$MPWF_ID "$MODEL_ROOT/slurm/mpas2wrf.sh")
+
+UPPM_ID=$(sbatch --parsable --dependency=afterany:$MPWF_ID "$MODEL_ROOT/slurm/upp.mpas.sh")
+UPPM_ID=$(sbatch --parsable --dependency=afterany:$UPPM_ID "$MODEL_ROOT/slurm/upp.mpas.sh")
+
+# --------------------------
+# Optional WRF post-processing if MPAS LBCs
+# --------------------------
+if [ "$LBC_TYPE" = "MPAS" ]; then
+  UNGR_ID=$(sbatch --parsable --dependency=afterany:$UPPM_ID "$MODEL_ROOT/slurm/ungrib.sh")
+  MTGD_ID=$(sbatch --parsable --dependency=afterany:$UNGR_ID "$MODEL_ROOT/slurm/metgrid.sh")
+  REAL_ID=$(sbatch --parsable --dependency=afterany:$MTGD_ID "$MODEL_ROOT/slurm/real.wrf.sh")
+fi
+
+# --------------------------
+# Post-processing & output handling
+# --------------------------
+TCTL_ID=$(sbatch --parsable --dependency=afterany:$UPPM_ID "$MODEL_ROOT/slurm/toctl.mpas.sh")
+ASCI_ID=$(sbatch --parsable --dependency=afterany:$UPPM_ID "$MODEL_ROOT/slurm/ascii.mpas.sh")
+STAT_ID=$(sbatch --parsable --dependency=afterany:$ASCI_ID "$MODEL_ROOT/slurm/stats.mpas.sh")
+
+# JSON outputs for polygons
+TJSN_ID1=$(sbatch --parsable --dependency=afterany:$UPPM_ID "$MODEL_ROOT/slurm/json/mpas/$TYPE_CHART/part1.sh")
+TJSN_ID2=$(sbatch --parsable --dependency=afterany:$UPPM_ID "$MODEL_ROOT/slurm/json/mpas/$TYPE_CHART/part2.sh")
+TJSN_ID3=$(sbatch --parsable --dependency=afterany:$UPPM_ID "$MODEL_ROOT/slurm/json/mpas/$TYPE_CHART/part3.sh")
+TJSN_ID4=$(sbatch --parsable --dependency=afterany:$UPPM_ID "$MODEL_ROOT/slurm/json/mpas/$TYPE_CHART/part4.sh")
+
+# Transfer to legacy web system
+# SITE-SPECIFIC WEB PUBLISHING REMOVED FROM PUBLIC VERSION
+
+# GFS JSON outputs
+GJSN_ID1=$(sbatch --parsable --dependency=after:$MPAS_ID_RES --begin=now+10minutes "$MODEL_ROOT/slurm/json/gfs/bands/part1.sh")
+GJSN_ID2=$(sbatch --parsable --dependency=after:$MPAS_ID_RES --begin=now+10minutes "$MODEL_ROOT/slurm/json/gfs/bands/part2.sh")
+GJSN_ID3=$(sbatch --parsable --dependency=after:$MPAS_ID_RES --begin=now+10minutes "$MODEL_ROOT/slurm/json/gfs/bands/part3.sh")
+GJSN_ID4=$(sbatch --parsable --dependency=after:$MPAS_ID_RES --begin=now+10minutes "$MODEL_ROOT/slurm/json/gfs/bands/part4.sh")
+
+# GFS toctl
+GTCTL_ID=$(sbatch --parsable --dependency=afterany:$MPAS_ID_RES "$MODEL_ROOT/slurm/toctl.gfs.sh")
+

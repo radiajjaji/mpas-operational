@@ -1,0 +1,119 @@
+&nhyd_model
+    config_time_integration_order = 2
+    config_dt = DT
+    config_photdt =  PHOTDT
+    config_start_time = 'START_DATE'
+    config_run_duration = 'MPAS_FORECAST_LENGTH'
+    config_split_dynamics_transport = true
+    config_number_of_sub_steps = 2
+    config_dynamics_split_steps = 3
+    config_h_mom_eddy_visc2 = 0.0
+    config_h_mom_eddy_visc4 = 0.0
+    config_v_mom_eddy_visc2 = 0.0
+    config_h_theta_eddy_visc2 = 0.0
+    config_h_theta_eddy_visc4 = 0.0
+    config_v_theta_eddy_visc2 = 0.0
+    config_horiz_mixing = '2d_smagorinsky'
+    config_visc4_2dsmag = 0.05
+    config_w_adv_order = 3
+    config_theta_adv_order = 3
+    config_scalar_adv_order = 3
+    config_u_vadv_order = 3
+    config_w_vadv_order = 3
+    config_theta_vadv_order = 3
+    config_scalar_vadv_order = 3
+    config_scalar_advection = true
+    config_positive_definite = false
+    config_monotonic = true
+    config_coef_3rd_order = 0.25
+    config_epssm = 0.5
+    config_smdiv = 0.1
+    config_apvm_upwinding = UPWIND
+    config_len_disp = DX
+/
+
+&damping
+    config_zd = 22000.0
+    config_xnutr = 0.2
+/
+&limited_area
+    config_apply_lbcs = false
+/
+&io
+    config_pio_num_iotasks = IOTASKS
+    config_pio_stride = STRIDE
+/
+&decomposition
+    config_block_decomp_file_prefix = '/scratch/lus/arw/model/src/mpas/meshes/MPAS_RESOLUTION/XNN.NUM.graph.info.part.'
+/
+&restart
+    config_do_restart = DO_RESTART
+/
+&printout
+    config_print_debug_info = false
+    config_print_global_minmax_sca = false
+    config_print_global_minmax_vel = false
+    config_print_detailed_minmax_vel = false
+    config_print_global_minmax_chem = false
+/
+
+&IAU
+    config_IAU_option = 'off'
+    config_IAU_window_length_s = 21600.
+/
+
+&physics
+    config_sst_update = false
+    config_sstdiurn_update = false
+    config_deepsoiltemp_update = false
+    config_bucket_update = 'none'
+    config_physics_suite = 'mesoscale_reference'
+    config_pbl_scheme = 'bl_mynn'
+    config_sfclayer_scheme = 'sf_mynn'
+    config_lsm_scheme = 'sf_noah'
+    config_frac_seaice  = false
+    config_sfc_albedo  = true
+    config_sfc_snowalbedo = true
+    config_sst_update  = false
+    config_sstdiurn_update = false
+    config_deepsoiltemp_update = false
+    config_bucket_update = 'none'
+    config_radtlw_interval  = '00:15:00'
+    config_radtsw_interval  = '00:15:00'
+    config_aer_ra_feedback = true
+/
+
+&chemistry
+    config_seas_opt           = 3
+    config_seas_factor        = 1.0
+    config_use_aer_IN         = false
+    config_unsoluble_IN_size  = 0.5
+    config_soluble_IN_size    = 0.1
+    config_gas_drydep_opt     = 1
+    config_ctrans_opt         = 'no_ctrans'
+    config_cu_scav_on         = true
+    config_mono_work_coupled  = false
+    config_chem_opt           = 'bin4aer_dust'
+    config_aer_op_opt         = 'volume_approx'
+    config_diagnostic_opt     = 1
+
+    config_dust_opt          = 'gocart'
+    config_dust_factor       = 0.55
+    config_drydep_on         = true
+    config_wetscav_on        = true
+    config_aer_drydep_opt    = 201
+    config_kdepvel           = 1
+    !config_settling_option   = 1
+/
+
+&soundings
+    config_sounding_interval = 'none'
+/
+
+&assimilation
+    config_jedi_da = true
+/
+
+&development
+    config_halo_exch_method = 'mpas_halo'
+/

@@ -1,0 +1,16 @@
+<streams>
+<immutable_stream name="input"
+                  type="input"
+                  io_type="IO_IN"
+                  filename_template="/scratch/lus/arw/model/src/mpas/meshes/MPAS_RESOLUTION/XNN.NUM.static.dust.nc"
+                  clobber_mode="replace_files"
+                  input_interval="initial_only" />
+<immutable_stream name="output"
+                  type="output"
+                  io_type="IO_OUT"
+                  filename_template="/scratch/lus/tmp/arw/day/rCYCLE/INIT.$Y-$M-$D_$h.nc"
+                  clobber_mode="replace_files"
+                  packages="initial_conds"
+                  output_interval="initial_only" />
+</streams>
+

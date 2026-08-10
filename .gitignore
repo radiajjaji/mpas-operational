@@ -1,0 +1,9 @@
+
+# Large MPAS/WRF physics lookup data
+MP_THOMPSON_freezeH2O_DATA.DBL
+
+# MPAS Registry-generated include/build directories
+source/mpas-8.0-dust/src/core_atmosphere/inc/
+source/mpas-8.0-dust/src/core_init_atmosphere/inc/
+source/mpas-8.0-dust/src/core_atmosphere/libchem/
+source/mpas-8.0-dust/src/core_atmosphere/libphys/

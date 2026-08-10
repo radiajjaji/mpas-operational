@@ -1,0 +1,62 @@
+<streams>
+<immutable_stream name="input"
+                  type="input"
+                  filename_template="/scratch/lus/tmp/arw/day/rCYCLE/INIT.$Y-$M-$D_$h.nc"
+                  io_type="IO_IN"
+                  input_interval="initial_only" />
+
+<immutable_stream name="restart"
+                  type="input;output"
+                  filename_template="/scratch/lus/tmp/arw/day/rCYCLE/RSTR.$Y-$M-$D_$h.nc"
+                  input_interval="initial_only"
+                  io_type="IO_OUT"
+                  clobber_mode="replace_files"
+        	  output_interval="03:00:00" />
+
+<stream name="output"
+        type="output"
+        filename_template="/scratch/lus/tmp/arw/day/rCYCLE/MPAS.$Y-$M-$D_$h.nc"
+        output_interval="1:00:00"
+        io_type="IO_OUT"
+        clobber_mode="replace_files">
+
+        <file name="stream_list.atmosphere.output"/>
+</stream>
+
+
+<stream name="diagnostics"
+        type="output"
+        filename_template="/scratch/lus/tmp/arw/day/rCYCLE/DIAG.$Y-$M-$D_$h.nc"
+        filename_interval="none"
+        clobber_mode="replace_files"
+        io_type="IO_OUT"
+        output_interval="none" >
+
+        <file name="stream_list.atmosphere.diagnostics"/>
+</stream>
+
+<stream name="surface"
+        type="input"
+        filename_template="/scratch/lus/tmp/arw/day/rCYCLE/INIT.$Y-$M-$D_$h.nc"
+        filename_interval="none"
+        io_type="IO_IN"
+        input_interval="none" >
+
+        <file name="stream_list.atmosphere.surface"/>
+</stream>
+
+<immutable_stream name="iau"
+                  type="input"
+                  filename_template="/scratch/lus/tmp/arw/day/rCYCLE/XNN.NUM.AmB.$Y-$M-$D_$h.nc"
+                  filename_interval="none"
+                  packages="iau"
+                  input_interval="initial_only" />
+
+<immutable_stream name="lbc_in"
+                  type="input"
+                  filename_template="/scratch/lus/tmp/arw/day/rCYCLE/lbc.$Y-$M-$D_$h.nc"
+                  filename_interval="input_interval"
+                  packages="limited_area"
+                  input_interval="3:00:00" />
+
+</streams>
