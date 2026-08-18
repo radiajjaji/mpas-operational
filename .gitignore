@@ -7,3 +7,23 @@ source/mpas-8.0-dust/src/core_atmosphere/inc/
 source/mpas-8.0-dust/src/core_init_atmosphere/inc/
 source/mpas-8.0-dust/src/core_atmosphere/libchem/
 source/mpas-8.0-dust/src/core_atmosphere/libphys/
+
+# mpas2wrf / WPS build artifacts
+tools/mpas2wrf/**/*.o
+tools/mpas2wrf/**/*.mod
+tools/mpas2wrf/**/*.a
+tools/mpas2wrf/**/*.so
+tools/mpas2wrf/**/*.exe
+tools/mpas2wrf/**/*.tar.gz
+tools/mpas2wrf/**/*.tgz
+
+# UPP build artifacts
+tools/upp4.1-mpas/**/*.o
+tools/upp4.1-mpas/**/*.mod
+tools/upp4.1-mpas/**/*.a
+tools/upp4.1-mpas/**/*.so
+tools/upp4.1-mpas/**/*.exe
+tools/upp4.1-mpas/exec/
+tools/upp4.1-mpas/lib/
+tools/upp4.1-mpas/include/
+tools/upp4.1-mpas/backup/

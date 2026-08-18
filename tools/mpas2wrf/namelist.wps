@@ -1,0 +1,39 @@
+&share
+ wrf_core = 'ARW',
+ max_dom = 1,
+ base_date  = '2024-10-10_01:00:00'
+ start_date = '2024-10-10_01:00:00',
+ end_date   = '2024-10-10_01:00:00',
+ interval_seconds = 3600,
+ io_form_geogrid = 2,
+ opt_output_from_geogrid_path = '/scratch/lus/arw/model/wps/domains/GLOBAL/geogrid/modis/4.2.2',
+ debug_level = 0,
+ nocolons = .true.,
+/
+&geogrid
+ parent_id         =   1,
+ parent_grid_ratio =   1,
+ i_parent_start    =   1,
+ j_parent_start    =   1,
+ s_we              =   1,
+ s_sn              =   1,
+ e_we          = 3601,
+ e_sn          = 1801,
+ geog_data_res = 'default',
+ dx = 0.1,
+ dy = 0.1,
+ map_proj  = 'lat-lon',
+ ref_lat   = 0.,
+ ref_lon   = 0.,
+ stand_lon = 0.,
+ geog_data_path = '/scratch/lus/arw/model/wps/WPS_GEOG',
+ opt_geogrid_tbl_path = '/scratch/lus/arw/model/src/util/convert/geogrid/',
+/
+
+&metgrid
+ constants_name = 'mpas:x3.4763609.grid.nc',
+ fg_name = 'mpas:MPAS',
+ io_form_metgrid = 11,
+ opt_output_from_metgrid_path = './',
+ opt_metgrid_tbl_path = '/scratch/lus/arw/model/src/util/convert/metgrid/',
+/

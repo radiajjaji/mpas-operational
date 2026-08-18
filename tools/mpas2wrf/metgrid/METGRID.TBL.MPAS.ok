@@ -1,0 +1,314 @@
+========================================
+name=TSLB
+        z_dim_name=num_st_layers
+        derived=yes
+        fill_lev =  10 : ST000010(200100)
+        fill_lev =  40 : ST010040(200100)
+        fill_lev = 100 : ST040100(200100)
+        fill_lev = 200 : ST100200(200100)
+========================================
+name=SMOIS
+        z_dim_name=num_sm_layers
+        derived=yes
+        fill_lev =  10 : SM000010(200100)
+        fill_lev =  40 : SM010040(200100)
+        fill_lev = 100 : SM040100(200100)
+        fill_lev = 200 : SM100200(200100)
+========================================
+name=SOIL_LAYERS
+        derived=yes
+        z_dim_name=num_st_layers
+        flag_in_output=FLAG_SOIL_LAYERS
+        fill_lev=all:vertical_index; level_template=TSLB
+========================================
+name=LANDSEA
+        interp_option=nearest_neighbor
+        fill_missing=-1.
+        fill_lev=200100:LANDMASK(1)
+========================================
+name=XLAND 
+mpas_name=xland
+        interp_option=nearest_neighbor
+        fill_missing=-1.
+========================================
+name=XICE ; output_name=SEAICE  
+========================================
+name=SEAICE 
+mpas_name=xice
+        interp_option=four_pt+average_4pt
+        interp_mask=LANDSEA(1) 
+        masked=land
+        missing_value=-1.E30
+        fill_missing=0.
+========================================
+name=CANWAT
+mpas_name=canwat
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=SNOW
+mpas_name=snow
+        interp_option=four_pt+average_4pt
+        masked=water
+        interp_mask=LANDSEA(0)
+        fill_missing=0.
+========================================
+name=TSK
+mpas_name=skintemp
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=PSFC
+mpas_name=surface_pressure
+        interp_option=four_pt+average_4pt
+        fill_lev=200100:const(200100.)
+========================================
+name=RAINC
+mpas_name=rainc
+        interp_option=sixteen_pt+four_pt+wt_average_4pt+wt_average_16pt+search
+        missing_value=-1.E30
+        fill_missing=0.
+========================================
+name=RAINNC
+mpas_name=rainnc
+        interp_option=sixteen_pt+four_pt+wt_average_4pt+wt_average_16pt+search
+        missing_value=-1.E30
+        fill_missing=0.
+========================================
+name=VEGFRA
+mpas_name=vegfra
+        interp_option=nearest_neighbor
+        fill_missing=0.
+========================================
+name=PMSL
+mpas_name=mslp
+        interp_option=four_pt+average_4pt
+========================================
+name=RH
+mpas_name=relhum
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=T2
+mpas_name=t2m
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=TH2
+mpas_name=th2m
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=Q2
+mpas_name=q2
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=U10
+mpas_name=u10
+        interp_option=four_pt+average_4pt
+        is_u_field=yes
+        output_stagger=U
+        fill_missing=0.
+========================================
+name=V10
+mpas_name=v10
+        interp_option=four_pt+average_4pt
+        is_v_field=yes
+        output_stagger=V
+        fill_missing=0.
+========================================
+name=T
+mpas_name=theta
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=W
+mpas_name=w
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=U
+mpas_name=uReconstructZonal
+        interp_option=four_pt+average_4pt
+        is_u_field=yes
+        output_stagger=U
+        fill_missing=0.
+========================================
+name=V
+mpas_name=uReconstructMeridional
+        interp_option=four_pt+average_4pt
+        is_v_field=yes
+        output_stagger=V
+        fill_missing=0.
+========================================
+name=SST
+mpas_name=sst
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=P_HYD
+mpas_name=pressure
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=DUST_1
+mpas_name=dust_a01
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=DUST_2
+mpas_name=dust_a02
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=DUST_3
+mpas_name=dust_a03
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=DUST_4
+mpas_name=dust_a04
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=QVAPOR
+mpas_name=qv
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=QRAIN
+mpas_name=qr
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=QCLOUD
+mpas_name=qc
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=QICE
+mpas_name=qi
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+#========================================
+#name=QSNOW
+#mpas_name=qs
+#        interp_option=four_pt+average_4pt
+#        fill_missing=0.
+#========================================
+#name=QGRAUP
+#mpas_name=qg
+#        interp_option=four_pt+average_4pt
+#        fill_missing=0.
+========================================
+name=RHO     
+mpas_name=rho
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+        fill_lev=200100:PSFC(200100)
+========================================
+name=GHT
+mpas_name=zgrid
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+        fill_lev=200100:HGT(200100)
+        fill_lev=200100:HGT_M(1)
+========================================
+name=SNOWH
+mpas_name=snowh
+        interp_option=four_pt+average_4pt
+        masked=water 
+        interp_mask=LANDSEA(0)
+        fill_missing=0.
+========================================
+name=OLR
+mpas_name=olrtoa
+        interp_option=sixteen_pt+four_pt+wt_average_4pt+wt_average_16pt+search
+        missing_value=-1.E30
+        fill_missing=0.
+========================================
+name=PBLH
+mpas_name=hpbl
+        interp_option=four_pt+average_4pt
+        missing_value=-1.E30
+        fill_missing=0.
+========================================
+name=REFD_MAX
+mpas_name=refl10cm_max
+        interp_option=sixteen_pt+four_pt+wt_average_4pt+wt_average_16pt+search
+        fill_missing=0.
+========================================
+name=EMISS
+mpas_name=sfc_emiss
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=ALBEDO
+mpas_name=sfc_albedo
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=SWDOWN
+mpas_name=gsw
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=GLW
+mpas_name=glw
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=SMOIS
+mpas_name=smois
+        output=no
+        masked=water
+        fill_missing=1.
+========================================
+name=SH2O
+mpas_name=smois
+        output=no
+        masked=water
+        fill_missing=1.
+========================================
+name=TSLB
+mpas_name=tslb
+        output=no
+        masked=water
+        fill_missing=285.
+========================================
+name=UST
+mpas_name=ust
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=HTOP
+mpas_name=cutop
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=HBOT
+mpas_name=cubot
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=Z0
+mpas_name=z0
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=TMN
+mpas_name=tmn
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=SMSTAV
+mpas_name=smstav
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================
+name=SMSTOT
+mpas_name=smstot
+        interp_option=four_pt+average_4pt
+        fill_missing=0.
+========================================

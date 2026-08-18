@@ -126,16 +126,61 @@ dust bins.
 
 ## Operational configuration
 
-The current operational configuration includes:
+The current operational MPAS chemistry and dust configuration includes:
 
-    config_chem_opt          = 'bin4aer_dust'
-    config_aer_op_opt        = 'volume_approx'
-    config_dust_opt          = 'gocart'
-    config_dust_factor       = 0.55
-    config_drydep_on         = true
-    config_aer_drydep_opt    = 201
-    config_kdepvel           = 1
-    config_aer_ra_feedback   = true
+    config_use_aer_IN         = false
+    config_gas_drydep_opt     = 1
+    config_cu_scav_on         = true
+
+    config_chem_opt           = 'bin4aer_dust'
+    config_aer_op_opt         = 'volume_approx'
+
+    config_dust_opt           = 'gocart'
+    config_dust_factor        = 0.55
+
+    config_drydep_on          = true
+    config_wetscav_on         = true
+    config_aer_drydep_opt     = 201
+    config_kdepvel            = 1
+
+    config_aer_ra_feedback    = true
+
+The principal options have the following operational meaning:
+
+- `config_chem_opt = 'bin4aer_dust'` selects the MPAS chemistry
+  package used by the operational dust configuration.
+
+- `config_dust_opt = 'gocart'` activates the GOCART dust-emission
+  formulation.
+
+- `config_dust_factor = 0.55` is the operational multiplicative
+  tuning factor applied to GOCART dust emissions.
+
+- `config_drydep_on = true` enables aerosol dry deposition.
+
+- `config_aer_drydep_opt = 201` selects the operational aerosol
+  dry-deposition treatment.
+
+- `config_kdepvel = 1` selects the configured deposition-velocity
+  treatment used by the aerosol dry-deposition pathway.
+
+- `config_wetscav_on = true` enables wet scavenging of aerosol
+  and dust.
+
+- `config_cu_scav_on = true` enables aerosol scavenging associated
+  with convective processes.
+
+- `config_aer_op_opt = 'volume_approx'` selects the aerosol optical
+  property treatment.
+
+- `config_aer_ra_feedback = true` enables aerosol-radiation
+  feedback.
+
+- `config_use_aer_IN = false` disables aerosol-aware ice nucleation
+  in the current operational configuration.
+
+- `config_gas_drydep_opt = 1` selects the gas dry-deposition option
+  used by the chemistry framework.
 
 The value of `config_dust_factor` is an operational tuning factor
 applied to GOCART dust emissions.
