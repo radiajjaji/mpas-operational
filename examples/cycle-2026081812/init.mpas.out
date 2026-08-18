@@ -1,0 +1,500 @@
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 1026535
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 221773824
+open files                      (-n) 16384
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 1026535
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+Currently Loaded Modulefiles:
+  1) cce/18.0.0                       7) cray-mpich-ucx/8.1.30
+  2) craype/2.7.32                    8) cray-libsci/24.07.0
+  3) cray-dsmml/0.3.0                 9) PrgEnv-cray/8.5.0
+  4) libfabric/1.20.1                10) cray-netcdf/4.9.0.13
+  5) cray-ucx/1.14.0                 11) cray-parallel-netcdf/1.12.3.13
+  6) craype-network-ucx              12) craype-x86-rome
+++ expr 2026081812
+++ cut -c9-10
++ export CYCLE_RUN=12
++ CYCLE_RUN=12
+++ /scratch/lus/dev/bin/smsdate -12 2026081812
++ export START_DATE=2026081800
++ START_DATE=2026081800
+++ expr 2026081800
+++ cut -c1-4
++ export START_YEAR=2026
++ START_YEAR=2026
+++ expr 2026081800
+++ cut -c5-6
++ export START_MONTH=08
++ START_MONTH=08
+++ expr 2026081800
+++ cut -c7-8
++ export START_DAY=18
++ START_DAY=18
+++ expr 2026081800
+++ cut -c9-10
++ export START_HOUR=00
++ START_HOUR=00
+++ expr 2026081800
+++ cut -c9-10
++ export CYCLE=00
++ CYCLE=00
++ '[' '!' -f /scratch/lus/tmp/arw/day//r12/OK.INIT.MPAS.2026081800 ']'
++ STRIPE=8
++ SSIZE=1048576
++ export 'MPICH_MPIIO_HINTS=*/GFS*:cb_nodes=32,*/INIT.*:cb_nodes=8:striping_factor=8:striping_unit=1048576'
++ MPICH_MPIIO_HINTS='*/GFS*:cb_nodes=32,*/INIT.*:cb_nodes=8:striping_factor=8:striping_unit=1048576'
++ export MPICH_COLL_OPT_OFF=MPI_Scatterv
++ MPICH_COLL_OPT_OFF=MPI_Scatterv
++ export MPICH_COLL_SYNC=MPI_Gather
++ MPICH_COLL_SYNC=MPI_Gather
++ export MPICH_RANK_REORDER_METHOD=0
++ MPICH_RANK_REORDER_METHOD=0
++ case $MPAS_RESOLUTION in
++ XNN=x1
++ NUM=4096002
++ LEVS=56
++ export IO_IN=pnetcdf,cdf5
++ IO_IN=pnetcdf,cdf5
++ export IO_OUT=pnetcdf,cdf5
++ IO_OUT=pnetcdf,cdf5
++ export STRIDE=10
++ STRIDE=10
++ export IOTASKS=16
++ IOTASKS=16
++ export NPROC=256
++ NPROC=256
++ export PPN=16
++ PPN=16
++ export OMP_NUM_THREADS=
++ OMP_NUM_THREADS=
++ export KMP_STACKSIZE=2G
++ KMP_STACKSIZE=2G
++ export KMP_AFFINITY=disabled
++ KMP_AFFINITY=disabled
++ sed -e s/START_DATE/2026-08-18_00:00:00/g -e s/CYCLE/12/g -e s/MPAS_LEVS/56/g -e s/MPAS_RESOLUTION/12/g -e s/GFS_LEVS/42/g -e s/IOTASKS/16/g -e s/STRIDE/10/g -e s/XNN/x1/g -e s/NUM/4096002/g /scratch/lus/arw/model/name/mpas/8.0.v/namelist.init_atmosphere
++ cat namelist.init_atmosphere
+&nhyd_model
+    config_init_case = 7
+    config_start_time = '2026-08-18_00:00:00'
+    config_stop_time = '2026-08-18_00:00:00'
+/
+
+&dimensions
+    config_nvertlevels = 56
+    config_nsoillevels = 4
+    config_nfglevels = 42
+    config_nfgsoillevels = 4
+/
+
+&data_sources
+    config_met_prefix = '/scratch/lus/tmp/arw/day/r12/GFS'
+    config_use_spechumd = false
+/
+
+&vertical_grid
+    config_ztop = 30000.0
+    config_nsmterrain = 1
+    config_smooth_surfaces = true
+    config_dzmin = 0.3
+    config_nsm = 30
+    config_tc_vertical_grid = true
+    config_blend_bdy_terrain = false
+/
+
+&interpolation_control
+    config_extrap_airtemp = 'lapse-rate'
+/
+
+&preproc_stages
+    config_static_interp = false
+    config_native_gwd_static = false
+    config_vertical_grid = true
+    config_met_interp = true
+    config_input_sst = false
+    config_input_chem = false
+    config_frac_seaice = true
+/
+
+&io
+    config_pio_num_iotasks = 16
+    config_pio_stride = 10
+/
+
+&decomposition
+    config_block_decomp_file_prefix = '/scratch/lus/arw/model/src/mpas/meshes/12/x1.4096002.graph.info.part.'
+/
+
+
++ sed -e s/IO_IN/pnetcdf,cdf5/g -e s/MPAS_RESOLUTION/12/g -e s/XNN/x1/g -e s/NUM/4096002/g -e s/IO_OUT/pnetcdf,cdf5/g -e s/CYCLE/12/g /scratch/lus/arw/model/name/mpas/8.0.v/streams.init_atmosphere
++ cat streams.init_atmosphere
+<streams>
+<immutable_stream name="input"
+                  type="input"
+                  io_type="pnetcdf,cdf5"
+                  filename_template="/scratch/lus/arw/model/src/mpas/meshes/12/x1.4096002.static.dust.nc"
+                  clobber_mode="replace_files"
+                  input_interval="initial_only" />
+<immutable_stream name="output"
+                  type="output"
+                  io_type="pnetcdf,cdf5"
+                  filename_template="/scratch/lus/tmp/arw/day/r12/INIT.$Y-$M-$D_$h.nc"
+                  clobber_mode="replace_files"
+                  packages="initial_conds"
+                  output_interval="initial_only" />
+</streams>
+
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/init_atmosphere_model init.exe
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/CAM_ABS_DATA.DBL
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/CAM_AEROPT_DATA.DBL
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/GENPARM.TBL
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/LANDUSE.TBL
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/OZONE_DAT.TBL
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/OZONE_LAT.TBL
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/OZONE_PLEV.TBL
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/RRTMG_LW_DATA
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/RRTMG_LW_DATA.DBL
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/RRTMG_SW_DATA
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/RRTMG_SW_DATA.DBL
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/SOILPARM.TBL
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/src/core_atmosphere/physics/physics_wrf/files/VEGPARM.TBL
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/build_tables
++ ln -sf /scratch/lus/arw/model/src/mpas/cce/8.0.v/default_inputs
++ ln -sf /scratch/lus/arw/model/name/mpas/8.0.v/stream_list.atmosphere.diagnostics
++ ln -sf /scratch/lus/arw/model/name/mpas/8.0.v/stream_list.atmosphere.output
++ ln -sf /scratch/lus/arw/model/name/mpas/8.0.v/stream_list.atmosphere.surface
++ '[' '!' -f /scratch/lus/tmp/arw/day//r12/INIT.2026-08-18_00.nc ']'
++ /bin/rm -f /scratch/lus/arw/model/log/log.init_atmosphere.0000.out
++ export SLURM_CPU_BIND=verbose
++ SLURM_CPU_BIND=verbose
++ ln -sf /scratch/lus/arw/model/log/log.init_atmosphere.0000.out log.init_atmosphere.0000.out
++ ldd init.exe
+	linux-vdso.so.1 (0x00007ffc6f2ff000)
+	libnetcdff_crayclang_180.so.7 => /opt/cray/pe/lib64/libnetcdff_crayclang_180.so.7 (0x0000151be68b4000)
+	libnetcdf_crayclang_180.so.19 => /opt/cray/pe/lib64/libnetcdf_crayclang_180.so.19 (0x0000151be66b7000)
+	libpnetcdf_crayclang_180.so.4 => /opt/cray/pe/lib64/libpnetcdf_crayclang_180.so.4 (0x0000151be6217000)
+	libmpifort_cray.so.12 => /opt/cray/pe/mpich/8.1.30/ucx/cray/17.0/lib/libmpifort_cray.so.12 (0x0000151be616b000)
+	libsci_cray.so.6 => /opt/cray/pe/lib64/libsci_cray.so.6 (0x0000151be3080000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000151be307b000)
+	libmpi_cray.so.12 => /opt/cray/pe/mpich/8.1.30/ucx/cray/17.0/lib/libmpi_cray.so.12 (0x0000151be2806000)
+	libquadmath.so.0 => /usr/lib64/libquadmath.so.0 (0x0000151be27c0000)
+	libmodules.so.2 => /opt/cray/pe/cce/18.0.0/cce/x86_64/lib/libmodules.so.2 (0x0000151be27a5000)
+	libfi.so.2 => /opt/cray/pe/cce/18.0.0/cce/x86_64/lib/libfi.so.2 (0x0000151be21e1000)
+	libcraymath.so.2 => /opt/cray/pe/cce/18.0.0/cce/x86_64/lib/libcraymath.so.2 (0x0000151be20f9000)
+	libf.so.2 => /opt/cray/pe/cce/18.0.0/cce/x86_64/lib/libf.so.2 (0x0000151be2065000)
+	libu.so.2 => /opt/cray/pe/cce/18.0.0/cce/x86_64/lib/libu.so.2 (0x0000151be1f59000)
+	libcsup.so.1 => /opt/cray/pe/cce/18.0.0/cce/x86_64/lib/libcsup.so.1 (0x0000151be1f51000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x0000151be1f2d000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000151be1de1000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000151be1be8000)
+	libhdf5_hl_cray.so.310 => /opt/cray/pe/lib64/libhdf5_hl_cray.so.310 (0x0000151be1bc0000)
+	libhdf5_cray.so.310 => /opt/cray/pe/lib64/libhdf5_cray.so.310 (0x0000151be1787000)
+	libstdc++.so.6 => /usr/lib64/libstdc++.so.6 (0x0000151be1542000)
+	libunwind.so.1 => /opt/cray/pe/lib64/cce/libunwind.so.1 (0x0000151be1536000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000151be6997000)
+	libucs.so.0 => /opt/cray/pe/ucx/1.14.0/ucx/lib/libucs.so.0 (0x0000151be1000000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000151be152a000)
+	libucp.so.0 => /opt/cray/pe/ucx/1.14.0/ucx/lib/libucp.so.0 (0x0000151be0c00000)
+	libpmi.so.0 => /opt/cray/pe/lib64/libpmi.so.0 (0x0000151be1507000)
+	libpmi2.so.0 => /opt/cray/pe/lib64/libpmi2.so.0 (0x0000151be14e4000)
+	libgfortran.so.5 => /usr/lib64/libgfortran.so.5 (0x0000151be092c000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x0000151be14be000)
+	libz.so.1 => /usr/lib64/libz.so.1 (0x0000151be14a5000)
+	libnuma.so.1 => /usr/lib64/libnuma.so.1 (0x0000151be0600000)
+	libucm.so.0 => /opt/cray/pe/ucx/1.14.0/ucx/lib/libucm.so.0 (0x0000151be0200000)
+	libuct.so.0 => /opt/cray/pe/ucx/1.14.0/ucx/lib/libuct.so.0 (0x0000151bdfe00000)
+	libpals.so.0 => /opt/cray/pals/1.4/lib/libpals.so.0 (0x0000151be149b000)
++ /usr/bin/time -v srun -l --export=ALL --propagate=STACK,CORE --cpu_bind=core init.exe
+236:  STOP  
+138:  STOP  
+233:  STOP  
+ 74:  STOP  
+ 45:  STOP  
+169:  STOP  
+ 92:  STOP  
+ 29:  STOP  
+202:  STOP  
+254:  STOP  
+ 76:  STOP  
+ 42:  STOP  
+173:  STOP  
+205:  STOP  
+174:  STOP  
+170:  STOP  
+185:  STOP  
+206:  STOP  
+171:  STOP  
+153:  STOP  
+217:  STOP  
+186:  STOP  
+234:  STOP  
+203:  STOP  
+ 78:  STOP  
+141:  STOP  
+ 75:  STOP  
+ 25:  STOP  
+ 58:  STOP  
+ 11:  STOP  
+ 77:  STOP  
+ 90:  STOP  
+221:  STOP  
+137:  STOP  
+253:  STOP  
+ 26:  STOP  
+250:  STOP  
+166:  STOP  
+218:  STOP  
+201:  STOP  
+121:  STOP  
+122:  STOP  
+ 71:  STOP  
+188:  STOP  
+106:  STOP  
+255:  STOP  
+109:  STOP  
+125:  STOP  
+ 43:  STOP  
+214:  STOP  
+157:  STOP  
+252:  STOP  
+ 12:  STOP  
+120:  STOP  
+126:  STOP  
+154:  STOP  
+ 72:  STOP  
+139:  STOP  
+167:  STOP  
+249:  STOP  
+136:  STOP  
+ 73:  STOP  
+ 91:  STOP  
+ 46:  STOP  
+237:  STOP  
+133:  STOP  
+142:  STOP  
+102:  STOP  
+104:  STOP  
+213:  STOP  
+ 22:  STOP  
+229:  STOP  
+ 38:  STOP  
+168:  STOP  
+251:  STOP  
+152:  STOP  
+248:  STOP  
+216:  STOP  
+ 69:  STOP  
+ 61:  STOP  
+156:  STOP  
+197:  STOP  
+247:  STOP  
+ 39:  STOP  
+118:  STOP  
+110:  STOP  
+163:  STOP  
+ 24:  STOP  
+246:  STOP  
+ 41:  STOP  
+ 59:  STOP  
+232:  STOP  
+198:  STOP  
+134:  STOP  
+196:  STOP  
+199:  STOP  
+172:  STOP  
+  6:  STOP  
+219:  STOP  
+ 68:  STOP  
+107:  STOP  
+187:  STOP  
+ 14:  STOP  
+164:  STOP  
+204:  STOP  
+ 66:  STOP  
+ 86:  STOP  
+184:  STOP  
+228:  STOP  
+ 10:  STOP  
+108:  STOP  
+181:  STOP  
+158:  STOP  
+ 37:  STOP  
+  9:  STOP  
+ 54:  STOP  
+ 30:  STOP  
+ 67:  STOP  
+132:  STOP  
+ 21:  STOP  
+245:  STOP  
+111:  STOP  
+222:  STOP  
+189:  STOP  
+  8:  STOP  
+103:  STOP  
+212:  STOP  
+151:  STOP  
+207:  STOP  
+150:  STOP  
+  7:  STOP  
+161:  STOP  
+155:  STOP  
+119:  STOP  
+215:  STOP  
+ 88:  STOP  
+ 23:  STOP  
+149:  STOP  
+231:  STOP  
+ 13:  STOP  
+193:  STOP  
+ 79:  STOP  
+244:  STOP  
+148:  STOP  
+ 34:  STOP  
+ 36:  STOP  
+ 87:  STOP  
+175:  STOP  
+190:  STOP  
+183:  STOP  
+ 94:  STOP  
+162:  STOP  
+ 98:  STOP  
+220:  STOP  
+180:  STOP  
+182:  STOP  
+ 27:  STOP  
+ 99:  STOP  
+241:  STOP  
+101:  STOP  
+ 89:  STOP  
+ 93:  STOP  
+131:  STOP  
+ 62:  STOP  
+209:  STOP  
+116:  STOP  
+ 57:  STOP  
+147:  STOP  
+117:  STOP  
+243:  STOP  
+ 56:  STOP  
+ 85:  STOP  
+145:  STOP  
+129:  STOP  
+ 83:  STOP  
+194:  STOP  
+123:  STOP  
+146:  STOP  
+177:  STOP  
+ 53:  STOP  
+ 55:  STOP  
+ 18:  STOP  
+235:  STOP  
+211:  STOP  
+ 52:  STOP  
+210:  STOP  
+ 33:  STOP  
+ 50:  STOP  
+115:  STOP  
+140:  STOP  
+178:  STOP  
+143:  STOP  
+ 95:  STOP  
+ 82:  STOP  
+113:  STOP  
+ 84:  STOP  
+ 97:  STOP  
+ 44:  STOP  
+ 60:  STOP  
+114:  STOP  
+  2:  STOP  
+242:  STOP  
+ 19:  STOP  
+179:  STOP  
+  3:  STOP  
+124:  STOP  
+ 51:  STOP  
+159:  STOP  
+ 17:  STOP  
+ 81:  STOP  
+ 20:  STOP  
+ 47:  STOP  
+ 49:  STOP  
+  1:  STOP  
+226:  STOP  
+227:  STOP  
+  4:  STOP  
+ 31:  STOP  
+ 15:  STOP  
+223:  STOP  
+127:  STOP  
+ 28:  STOP  
+191:  STOP  
+ 63:  STOP  
+238:  STOP  
+239:  STOP  
+230:  STOP  
+112:  STOP  
+ 80:  STOP  
+176:  STOP  
+165:  STOP  
+160:  STOP  
+ 65:  STOP  
+135:  STOP  
+ 48:  STOP  
+ 16:  STOP  
+ 32:  STOP  
+195:  STOP  
+105:  STOP  
+200:  STOP  
+  0:  STOP  
+144:  STOP  
+128:  STOP  
+225:  STOP  
+192:  STOP  
+208:  STOP  
+ 96:  STOP  
+ 64:  STOP  
+  5:  STOP  
+240:  STOP  
+224:  STOP  
+ 35:  STOP  
+ 40:  STOP  
+130:  STOP  
+ 70:  STOP  
+100:  STOP  
+	Command being timed: "srun -l --export=ALL --propagate=STACK,CORE --cpu_bind=core init.exe"
+	User time (seconds): 0.02
+	System time (seconds): 0.04
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:18.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 10140
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2793
+	Voluntary context switches: 961
+	Involuntary context switches: 2
+	Swaps: 0
+	File system inputs: 24
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
++ '[' 0 -ne 0 ']'
++ grep 'Finished running the init_atmosphere core' /scratch/lus/arw/model/log/log.init_atmosphere.0000.out
+Binary file /scratch/lus/arw/model/log/log.init_atmosphere.0000.out matches
++ '[' 0 -eq 0 ']'
++ touch /scratch/lus/tmp/arw/day//r12/OK.INIT.MPAS.2026081800

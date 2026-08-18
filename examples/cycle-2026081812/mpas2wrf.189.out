@@ -1,0 +1,1055 @@
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 1026535
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 221773824
+open files                      (-n) 16384
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 1026535
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
++ exec
++ ulimit -s unlimited
++ ulimit -c 0
++ echo ============================================================
+============================================================
++ echo 'Job      : 7594822'
+Job      : 7594822
++ echo 'Task ID  : 189'
+Task ID  : 189
+++ hostname
++ echo 'Host     : nid000127'
+Host     : nid000127
+++ date -Is
++ echo 'Date     : 2026-08-18T12:40:23+00:00'
+Date     : 2026-08-18T12:40:23+00:00
++ echo ============================================================
+============================================================
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ export OMP_PLACES=cores
++ OMP_PLACES=cores
++ export OMP_PROC_BIND=close
++ OMP_PROC_BIND=close
++ export COMPILER=intel
++ COMPILER=intel
++ module purge
+++ /opt/cray/pe/modules/3.2.11.7/bin/modulecmd bash purge
++ eval LD_LIBRARY_PATH=/scratch/lus/dev/ncl/lib:/scratch/lus/dev/paraview/lib:/scratch/lus/dev/paraview/lib/paraview-5.11:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/ncl/lib:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib:/opt/cray/pe/perftools/24.07.0/lib64:/scratch/lus/dev/degrib/tcltk/lib:/scratch/lus/dev/ncl/lib:/scratch/lus/dev/paraview/lib:/scratch/lus/dev/paraview/lib/paraview-5.11:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/ncl/lib:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib:/opt/cray/pe/perftools/24.07.0/lib64:/scratch/lus/dev/degrib/tcltk/lib:/scratch/lus/dev/ncl/lib:/scratch/lus/dev/paraview/lib:/scratch/lus/dev/paraview/lib/paraview-5.11:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/ncl/lib:/opt/cray/pe/libsci/24.07.0/CRAY/17.0/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/cray/17.0/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib:/opt/cray/pe/cce/18.0.0/cce-clang/x86_64/lib:/opt/cray/pe/cce/18.0.0/cce/x86_64/lib:/opt/cray/pe/perftools/24.07.0/lib64:/scratch/lus/dev/degrib/tcltk/lib:/scratch/lus/dev/ncl/lib:/scratch/lus/dev/lib:/scratch/lus/arw/model/src/iodaconv/lib64:/scratch/lus/arw/model/src/ioda/lib64:/scratch/lus/arw/model/src/jedi/lib64:/scratch/lus/dev/ncl/lib:/scratch/lus/dev/lib:/scratch/lus/arw/model/src/iodaconv/lib64:/scratch/lus/arw/model/src/ioda/lib64:/scratch/lus/arw/model/src/jedi/lib64:/scratch/lus/dev/ncl/lib:/scratch/lus/dev/lib:/scratch/lus/arw/model/src/iodaconv/lib64:/scratch/lus/arw/model/src/ioda/lib64:/scratch/lus/arw/model/src/jedi/lib64 ';export' 'LD_LIBRARY_PATH;MANPATH=/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/c3/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man' ';export' 'MANPATH;MODULEPATH=/scratch/lus/arw/model/src/nceplibs/modules:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles:/scratch/lus/nvidia/hpc_sdk/modulefiles/:/scratch/lus/modulefiles:/scratch/lus/craysoft/cray/modulefiles' ';export' 'MODULEPATH;PATH=/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe' ';export' 'PATH;PKG_CONFIG_PATH=/scratch/lus/dev/lib64/pkgconfig:/scratch/lus/dev/lib64/pkgconfig:/scratch/lus/dev/lib64/pkgconfig:/opt/cray/xpmem/default/lib64/pkgconfig:/opt/cray/xpmem/default/lib64/pkgconfig:/opt/cray/xpmem/default/lib64/pkgconfig' ';export' 'PKG_CONFIG_PATH;unset' 'APP2_STATE;unset' 'ATP_CFLAGS;unset' 'ATP_CFLAGS_GNU_FORTRAN;unset' 'CMAKE_PREFIX_PATH;unset' 'CMPLR_ROOT;unset' 'CPATH;unset' 'CRAYPAT_LD_LIBRARY_PATH;unset' 'CRAYPAT_OPTS_EXECUTABLE;unset' 'CRAYPAT_ROOT;unset' 'CRAYPE_DIR;unset' 'CRAYPE_NETWORK_TARGET;unset' 'CRAYPE_VERSION;unset' 'CRAY_CPU_TARGET;unset' 'CRAY_DSMML_BASEDIR;unset' 'CRAY_DSMML_DIR;unset' 'CRAY_DSMML_PREFIX;unset' 'CRAY_DSMML_ROOTDIR;unset' 'CRAY_DSMML_VER;unset' 'CRAY_LD_LIBRARY_PATH;unset' 'CRAY_LIBSCI_BASE_DIR;unset' 'CRAY_LIBSCI_PREFIX;unset' 'CRAY_LIBSCI_PREFIX_DIR;unset' 'CRAY_LIBSCI_VERSION;unset' 'CRAY_MPICH_BASEDIR;unset' 'CRAY_MPICH_DIR;unset' 'CRAY_MPICH_PREFIX;unset' 'CRAY_MPICH_VER;unset' 'CRAY_MPICH_VERSION;unset' 'CRAY_NETCDF_DIR;unset' 'CRAY_NETCDF_PREFIX;unset' 'CRAY_NETCDF_VERSION;unset' 'CRAY_PERFTOOLS_PREFIX;unset' 'CRAY_PERFTOOLS_VERSION;unset' 'CRAY_PE_MODULES;unset' 'CRAY_PRGENVINTEL;unset' 'CRAY_PYTHON_PREFIX;unset' 'CRAY_PYTHON_VERSION;unset' 'CRAY_R_PREFIX;unset' 'CRAY_R_VERSION;unset' 'CRAY_XPMEM_INCLUDE_OPTS;unset' 'CRAY_XPMEM_POST_LINK_OPTS;unset' 'DIAGUTIL_PATH;unset' 'INTEL_COMPILER_TYPE;unset' 'INTEL_PATH;unset' 'INTEL_VERSION;unset' 'LIBRARY_PATH;unset' 'LOADEDMODULES;unset' 'MKLROOT;unset' 'MPICH_DIR;unset' 'NETCDF_DIR;unset' 'OCL_ICD_FILENAMES;unset' 'OFFLOAD_INIT;unset' 'PAT_RT_PERFCTR_DISABLE_COMPONENTS;unset' 'PERFTOOLS_VERSION;unset' 'PE_AOCC_DEFAULT_FIXED_PKGCONFIG_PATH;unset' 'PE_AOCC_FIXED_PKGCONFIG_PATH;unset' 'PE_ATP_PKGCONFIG_VARIABLES;unset' 'PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH;unset' 'PE_CRAYCLANG_FIXED_PKGCONFIG_PATH;unset' 'PE_CRAY_DEFAULT_FIXED_PKGCONFIG_PATH;unset' 'PE_CRAY_FIXED_PKGCONFIG_PATH;unset' 'PE_CXX_PKGCONFIG_LIBS;unset' 'PE_DSMML_DEFAULT_VOLATILE_PKGCONFIG_PATH;unset' 'PE_DSMML_MODULE_NAME;unset' 'PE_DSMML_PKGCONFIG_LIBS;unset' 'PE_DSMML_VOLATILE_PKGCONFIG_PATH;unset' 'PE_ENV;unset' 'PE_FFTW_DEFAULT_TARGET_share;unset' 'PE_FFTW_DEFAULT_TARGET_x86_64;unset' 'PE_FFTW_DEFAULT_TARGET_x86_cascadelake;unset' 'PE_FFTW_DEFAULT_TARGET_x86_genoa;unset' 'PE_FFTW_DEFAULT_TARGET_x86_icelake;unset' 'PE_FFTW_DEFAULT_TARGET_x86_milan;unset' 'PE_FFTW_DEFAULT_TARGET_x86_milan_x;unset' 'PE_FFTW_DEFAULT_TARGET_x86_rome;unset' 'PE_FFTW_DEFAULT_TARGET_x86_skylake;unset' 'PE_FFTW_DEFAULT_TARGET_x86_spr;unset' 'PE_FFTW_DEFAULT_TARGET_x86_trento;unset' 'PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH;unset' 'PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS;unset' 'PE_FORTRAN_PKGCONFIG_LIBS;unset' 'PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH;unset' 'PE_GNU_FIXED_PKGCONFIG_PATH;unset' 'PE_HDF5_DEFAULT_FIXED_PRGENV;unset' 'PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV;unset' 'PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS;unset' 'PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH;unset' 'PE_INTEL_FIXED_PKGCONFIG_PATH;unset' 'PE_LIBSCI_DEFAULT_FIXED_PRGENV;unset' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_AOCC_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_NVHPC_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_NVIDIA_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPS_AOCC_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPS_CRAYCLANG_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPS_NVHPC_x86_64;unset' 'PE_LIBSCI_DEFAULT_GENCOMPS_NVIDIA_x86_64;unset' 'PE_LIBSCI_DEFAULT_OMP_REQUIRES;unset' 'PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp;unset' 'PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES;unset' 'PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH;unset' 'PE_LIBSCI_DEFAULT_VOLATILE_PRGENV;unset' 'PE_LIBSCI_DIR;unset' 'PE_LIBSCI_FIXED_PRGENV;unset' 'PE_LIBSCI_GENCOMPILERS_AOCC_x86_64;unset' 'PE_LIBSCI_GENCOMPILERS_CRAYCLANG_x86_64;unset' 'PE_LIBSCI_GENCOMPILERS_CRAY_x86_64;unset' 'PE_LIBSCI_GENCOMPILERS_GNU_x86_64;unset' 'PE_LIBSCI_GENCOMPILERS_INTEL_x86_64;unset' 'PE_LIBSCI_GENCOMPILERS_NVHPC_x86_64;unset' 'PE_LIBSCI_GENCOMPILERS_NVIDIA_x86_64;unset' 'PE_LIBSCI_GENCOMPS_AOCC_x86_64;unset' 'PE_LIBSCI_GENCOMPS_CRAYCLANG_x86_64;unset' 'PE_LIBSCI_GENCOMPS_CRAY_x86_64;unset' 'PE_LIBSCI_GENCOMPS_GNU_x86_64;unset' 'PE_LIBSCI_GENCOMPS_INTEL_x86_64;unset' 'PE_LIBSCI_GENCOMPS_NVHPC_x86_64;unset' 'PE_LIBSCI_GENCOMPS_NVIDIA_x86_64;unset' 'PE_LIBSCI_MODULE_NAME;unset' 'PE_LIBSCI_OMP_REQUIRES;unset' 'PE_LIBSCI_OMP_REQUIRES_openmp;unset' 'PE_LIBSCI_PKGCONFIG_LIBS;unset' 'PE_LIBSCI_PKGCONFIG_VARIABLES;unset' 'PE_LIBSCI_VOLATILE_PKGCONFIG_PATH;unset' 'PE_LIBSCI_VOLATILE_PRGENV;unset' 'PE_MPICH_DEFAULT_FIXED_PRGENV;unset' 'PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS;unset' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx906;unset' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx908;unset' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx90a;unset' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx940;unset' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx942;unset' 'PE_MPICH_DEFAULT_GTL_DIR_nvidia70;unset' 'PE_MPICH_DEFAULT_GTL_DIR_nvidia80;unset' 'PE_MPICH_DEFAULT_GTL_DIR_nvidia90;unset' 'PE_MPICH_DEFAULT_GTL_DIR_ponteVecchio;unset' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx906;unset' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx908;unset' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx90a;unset' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx940;unset' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx942;unset' 'PE_MPICH_DEFAULT_GTL_LIBS_nvidia70;unset' 'PE_MPICH_DEFAULT_GTL_LIBS_nvidia80;unset' 'PE_MPICH_DEFAULT_GTL_LIBS_nvidia90;unset' 'PE_MPICH_DEFAULT_GTL_LIBS_ponteVecchio;unset' 'PE_MPICH_DEFAULT_PKGCONFIG_LIBS;unset' 'PE_MPICH_DEFAULT_PKGCONFIG_VARIABLES;unset' 'PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH;unset' 'PE_MPICH_DEFAULT_VOLATILE_PRGENV;unset' 'PE_MPICH_FIXED_PRGENV;unset' 'PE_MPICH_FORTRAN_PKGCONFIG_LIBS;unset' 'PE_MPICH_GENCOMPILERS_AMD;unset' 'PE_MPICH_GENCOMPILERS_AOCC;unset' 'PE_MPICH_GENCOMPILERS_CRAY;unset' 'PE_MPICH_GENCOMPILERS_CRAYCLANG;unset' 'PE_MPICH_GENCOMPILERS_GNU;unset' 'PE_MPICH_GENCOMPILERS_NVIDIA;unset' 'PE_MPICH_GTL_DIR_amd_gfx906;unset' 'PE_MPICH_GTL_DIR_amd_gfx908;unset' 'PE_MPICH_GTL_DIR_amd_gfx90a;unset' 'PE_MPICH_GTL_DIR_amd_gfx940;unset' 'PE_MPICH_GTL_DIR_amd_gfx942;unset' 'PE_MPICH_GTL_DIR_nvidia70;unset' 'PE_MPICH_GTL_DIR_nvidia80;unset' 'PE_MPICH_GTL_DIR_nvidia90;unset' 'PE_MPICH_GTL_DIR_ponteVecchio;unset' 'PE_MPICH_GTL_LIBS_amd_gfx906;unset' 'PE_MPICH_GTL_LIBS_amd_gfx908;unset' 'PE_MPICH_GTL_LIBS_amd_gfx90a;unset' 'PE_MPICH_GTL_LIBS_amd_gfx940;unset' 'PE_MPICH_GTL_LIBS_amd_gfx942;unset' 'PE_MPICH_GTL_LIBS_nvidia70;unset' 'PE_MPICH_GTL_LIBS_nvidia80;unset' 'PE_MPICH_GTL_LIBS_nvidia90;unset' 'PE_MPICH_GTL_LIBS_ponteVecchio;unset' 'PE_MPICH_MODULE_NAME;unset' 'PE_MPICH_PKGCONFIG_LIBS;unset' 'PE_MPICH_PKGCONFIG_VARIABLES;unset' 'PE_MPICH_VOLATILE_PKGCONFIG_PATH;unset' 'PE_MPICH_VOLATILE_PRGENV;unset' 'PE_NETCDF_BASEDIR;unset' 'PE_NETCDF_CXX_PKGCONFIG_LIBS;unset' 'PE_NETCDF_DEFAULT_FIXED_PRGENV;unset' 'PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS;unset' 'PE_NETCDF_FIXED_PRGENV;unset' 'PE_NETCDF_FORTRAN_PKGCONFIG_LIBS;unset' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV;unset' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS;unset' 'PE_NETCDF_MODULE_NAME;unset' 'PE_NETCDF_PKGCONFIG_LIBS;unset' 'PE_NETCDF_REQUIRED_PRODUCTS;unset' 'PE_NVHPC_DEFAULT_FIXED_PKGCONFIG_PATH;unset' 'PE_NVHPC_FIXED_PKGCONFIG_PATH;unset' 'PE_NVIDIA_DEFAULT_FIXED_PKGCONFIG_PATH;unset' 'PE_NVIDIA_FIXED_PKGCONFIG_PATH;unset' 'PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS;unset' 'PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia;unset' 'PE_PAPI_DEFAULT_ACCEL_LIBS;unset' 'PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35;unset' 'PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES;unset' 'PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV;unset' 'PE_PERFTOOLS_MPICH_LIBDIR;unset' 'PE_PKGCONFIG_DEFAULT_LIBS;unset' 'PE_PKGCONFIG_DEFAULT_PRODUCTS;unset' 'PE_PKGCONFIG_LIBS;unset' 'PE_PKGCONFIG_PRODUCTS;unset' 'PE_PKGCONFIG_PRODUCTS_DEFAULT;unset' 'PE_PKG_CONFIG_PATH;unset' 'PE_PRODUCT_LIST;unset' 'PE_SMA_DEFAULT_COMPFLAG;unset' 'PE_SMA_DEFAULT_COMPFLAG_GNU;unset' 'PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64;unset' 'PE_SMA_DEFAULT_DIR_PGI_DEFAULT64;unset' 'PE_SMA_DEFAULT_PKGCONFIG_VARIABLES;unset' 'PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH;unset' 'PE_XPMEM_PKGCONFIG_LIBS;unset' 'PKGCONFIG_ENABLED;unset' 'PKG_CONFIG_PATH_DEFAULT;unset' 'PYTHON_PATH;unset' '_LMFILES_;unset' 'intel_already_loaded;'
+++ LD_LIBRARY_PATH=/scratch/lus/dev/ncl/lib:/scratch/lus/dev/paraview/lib:/scratch/lus/dev/paraview/lib/paraview-5.11:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/ncl/lib:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib:/opt/cray/pe/perftools/24.07.0/lib64:/scratch/lus/dev/degrib/tcltk/lib:/scratch/lus/dev/ncl/lib:/scratch/lus/dev/paraview/lib:/scratch/lus/dev/paraview/lib/paraview-5.11:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/ncl/lib:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib:/opt/cray/pe/perftools/24.07.0/lib64:/scratch/lus/dev/degrib/tcltk/lib:/scratch/lus/dev/ncl/lib:/scratch/lus/dev/paraview/lib:/scratch/lus/dev/paraview/lib/paraview-5.11:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/lib:/scratch/lus/dev/lib:/scratch/lus/dev/lib64:/scratch/lus/dev/ncl/lib:/opt/cray/pe/libsci/24.07.0/CRAY/17.0/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/cray/17.0/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib:/opt/cray/pe/cce/18.0.0/cce-clang/x86_64/lib:/opt/cray/pe/cce/18.0.0/cce/x86_64/lib:/opt/cray/pe/perftools/24.07.0/lib64:/scratch/lus/dev/degrib/tcltk/lib:/scratch/lus/dev/ncl/lib:/scratch/lus/dev/lib:/scratch/lus/arw/model/src/iodaconv/lib64:/scratch/lus/arw/model/src/ioda/lib64:/scratch/lus/arw/model/src/jedi/lib64:/scratch/lus/dev/ncl/lib:/scratch/lus/dev/lib:/scratch/lus/arw/model/src/iodaconv/lib64:/scratch/lus/arw/model/src/ioda/lib64:/scratch/lus/arw/model/src/jedi/lib64:/scratch/lus/dev/ncl/lib:/scratch/lus/dev/lib:/scratch/lus/arw/model/src/iodaconv/lib64:/scratch/lus/arw/model/src/ioda/lib64:/scratch/lus/arw/model/src/jedi/lib64
+++ export LD_LIBRARY_PATH
+++ MANPATH=/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/c3/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man
+++ export MANPATH
+++ MODULEPATH=/scratch/lus/arw/model/src/nceplibs/modules:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles:/scratch/lus/nvidia/hpc_sdk/modulefiles/:/scratch/lus/modulefiles:/scratch/lus/craysoft/cray/modulefiles
+++ export MODULEPATH
+++ PATH=/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe
+++ export PATH
+++ PKG_CONFIG_PATH=/scratch/lus/dev/lib64/pkgconfig:/scratch/lus/dev/lib64/pkgconfig:/scratch/lus/dev/lib64/pkgconfig:/opt/cray/xpmem/default/lib64/pkgconfig:/opt/cray/xpmem/default/lib64/pkgconfig:/opt/cray/xpmem/default/lib64/pkgconfig
+++ export PKG_CONFIG_PATH
+++ unset APP2_STATE
+++ unset ATP_CFLAGS
+++ unset ATP_CFLAGS_GNU_FORTRAN
+++ unset CMAKE_PREFIX_PATH
+++ unset CMPLR_ROOT
+++ unset CPATH
+++ unset CRAYPAT_LD_LIBRARY_PATH
+++ unset CRAYPAT_OPTS_EXECUTABLE
+++ unset CRAYPAT_ROOT
+++ unset CRAYPE_DIR
+++ unset CRAYPE_NETWORK_TARGET
+++ unset CRAYPE_VERSION
+++ unset CRAY_CPU_TARGET
+++ unset CRAY_DSMML_BASEDIR
+++ unset CRAY_DSMML_DIR
+++ unset CRAY_DSMML_PREFIX
+++ unset CRAY_DSMML_ROOTDIR
+++ unset CRAY_DSMML_VER
+++ unset CRAY_LD_LIBRARY_PATH
+++ unset CRAY_LIBSCI_BASE_DIR
+++ unset CRAY_LIBSCI_PREFIX
+++ unset CRAY_LIBSCI_PREFIX_DIR
+++ unset CRAY_LIBSCI_VERSION
+++ unset CRAY_MPICH_BASEDIR
+++ unset CRAY_MPICH_DIR
+++ unset CRAY_MPICH_PREFIX
+++ unset CRAY_MPICH_VER
+++ unset CRAY_MPICH_VERSION
+++ unset CRAY_NETCDF_DIR
+++ unset CRAY_NETCDF_PREFIX
+++ unset CRAY_NETCDF_VERSION
+++ unset CRAY_PERFTOOLS_PREFIX
+++ unset CRAY_PERFTOOLS_VERSION
+++ unset CRAY_PE_MODULES
+++ unset CRAY_PRGENVINTEL
+++ unset CRAY_PYTHON_PREFIX
+++ unset CRAY_PYTHON_VERSION
+++ unset CRAY_R_PREFIX
+++ unset CRAY_R_VERSION
+++ unset CRAY_XPMEM_INCLUDE_OPTS
+++ unset CRAY_XPMEM_POST_LINK_OPTS
+++ unset DIAGUTIL_PATH
+++ unset INTEL_COMPILER_TYPE
+++ unset INTEL_PATH
+++ unset INTEL_VERSION
+++ unset LIBRARY_PATH
+++ unset LOADEDMODULES
+++ unset MKLROOT
+++ unset MPICH_DIR
+++ unset NETCDF_DIR
+++ unset OCL_ICD_FILENAMES
+++ unset OFFLOAD_INIT
+++ unset PAT_RT_PERFCTR_DISABLE_COMPONENTS
+++ unset PERFTOOLS_VERSION
+++ unset PE_AOCC_DEFAULT_FIXED_PKGCONFIG_PATH
+++ unset PE_AOCC_FIXED_PKGCONFIG_PATH
+++ unset PE_ATP_PKGCONFIG_VARIABLES
+++ unset PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH
+++ unset PE_CRAYCLANG_FIXED_PKGCONFIG_PATH
+++ unset PE_CRAY_DEFAULT_FIXED_PKGCONFIG_PATH
+++ unset PE_CRAY_FIXED_PKGCONFIG_PATH
+++ unset PE_CXX_PKGCONFIG_LIBS
+++ unset PE_DSMML_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ unset PE_DSMML_MODULE_NAME
+++ unset PE_DSMML_PKGCONFIG_LIBS
+++ unset PE_DSMML_VOLATILE_PKGCONFIG_PATH
+++ unset PE_ENV
+++ unset PE_FFTW_DEFAULT_TARGET_share
+++ unset PE_FFTW_DEFAULT_TARGET_x86_64
+++ unset PE_FFTW_DEFAULT_TARGET_x86_cascadelake
+++ unset PE_FFTW_DEFAULT_TARGET_x86_genoa
+++ unset PE_FFTW_DEFAULT_TARGET_x86_icelake
+++ unset PE_FFTW_DEFAULT_TARGET_x86_milan
+++ unset PE_FFTW_DEFAULT_TARGET_x86_milan_x
+++ unset PE_FFTW_DEFAULT_TARGET_x86_rome
+++ unset PE_FFTW_DEFAULT_TARGET_x86_skylake
+++ unset PE_FFTW_DEFAULT_TARGET_x86_spr
+++ unset PE_FFTW_DEFAULT_TARGET_x86_trento
+++ unset PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ unset PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS
+++ unset PE_FORTRAN_PKGCONFIG_LIBS
+++ unset PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH
+++ unset PE_GNU_FIXED_PKGCONFIG_PATH
+++ unset PE_HDF5_DEFAULT_FIXED_PRGENV
+++ unset PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV
+++ unset PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS
+++ unset PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH
+++ unset PE_INTEL_FIXED_PKGCONFIG_PATH
+++ unset PE_LIBSCI_DEFAULT_FIXED_PRGENV
+++ unset PE_LIBSCI_DEFAULT_GENCOMPILERS_AOCC_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPILERS_NVHPC_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPILERS_NVIDIA_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPS_AOCC_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPS_CRAYCLANG_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPS_NVHPC_x86_64
+++ unset PE_LIBSCI_DEFAULT_GENCOMPS_NVIDIA_x86_64
+++ unset PE_LIBSCI_DEFAULT_OMP_REQUIRES
+++ unset PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp
+++ unset PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES
+++ unset PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ unset PE_LIBSCI_DEFAULT_VOLATILE_PRGENV
+++ unset PE_LIBSCI_DIR
+++ unset PE_LIBSCI_FIXED_PRGENV
+++ unset PE_LIBSCI_GENCOMPILERS_AOCC_x86_64
+++ unset PE_LIBSCI_GENCOMPILERS_CRAYCLANG_x86_64
+++ unset PE_LIBSCI_GENCOMPILERS_CRAY_x86_64
+++ unset PE_LIBSCI_GENCOMPILERS_GNU_x86_64
+++ unset PE_LIBSCI_GENCOMPILERS_INTEL_x86_64
+++ unset PE_LIBSCI_GENCOMPILERS_NVHPC_x86_64
+++ unset PE_LIBSCI_GENCOMPILERS_NVIDIA_x86_64
+++ unset PE_LIBSCI_GENCOMPS_AOCC_x86_64
+++ unset PE_LIBSCI_GENCOMPS_CRAYCLANG_x86_64
+++ unset PE_LIBSCI_GENCOMPS_CRAY_x86_64
+++ unset PE_LIBSCI_GENCOMPS_GNU_x86_64
+++ unset PE_LIBSCI_GENCOMPS_INTEL_x86_64
+++ unset PE_LIBSCI_GENCOMPS_NVHPC_x86_64
+++ unset PE_LIBSCI_GENCOMPS_NVIDIA_x86_64
+++ unset PE_LIBSCI_MODULE_NAME
+++ unset PE_LIBSCI_OMP_REQUIRES
+++ unset PE_LIBSCI_OMP_REQUIRES_openmp
+++ unset PE_LIBSCI_PKGCONFIG_LIBS
+++ unset PE_LIBSCI_PKGCONFIG_VARIABLES
+++ unset PE_LIBSCI_VOLATILE_PKGCONFIG_PATH
+++ unset PE_LIBSCI_VOLATILE_PRGENV
+++ unset PE_MPICH_DEFAULT_FIXED_PRGENV
+++ unset PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS
+++ unset PE_MPICH_DEFAULT_GTL_DIR_amd_gfx906
+++ unset PE_MPICH_DEFAULT_GTL_DIR_amd_gfx908
+++ unset PE_MPICH_DEFAULT_GTL_DIR_amd_gfx90a
+++ unset PE_MPICH_DEFAULT_GTL_DIR_amd_gfx940
+++ unset PE_MPICH_DEFAULT_GTL_DIR_amd_gfx942
+++ unset PE_MPICH_DEFAULT_GTL_DIR_nvidia70
+++ unset PE_MPICH_DEFAULT_GTL_DIR_nvidia80
+++ unset PE_MPICH_DEFAULT_GTL_DIR_nvidia90
+++ unset PE_MPICH_DEFAULT_GTL_DIR_ponteVecchio
+++ unset PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx906
+++ unset PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx908
+++ unset PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx90a
+++ unset PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx940
+++ unset PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx942
+++ unset PE_MPICH_DEFAULT_GTL_LIBS_nvidia70
+++ unset PE_MPICH_DEFAULT_GTL_LIBS_nvidia80
+++ unset PE_MPICH_DEFAULT_GTL_LIBS_nvidia90
+++ unset PE_MPICH_DEFAULT_GTL_LIBS_ponteVecchio
+++ unset PE_MPICH_DEFAULT_PKGCONFIG_LIBS
+++ unset PE_MPICH_DEFAULT_PKGCONFIG_VARIABLES
+++ unset PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ unset PE_MPICH_DEFAULT_VOLATILE_PRGENV
+++ unset PE_MPICH_FIXED_PRGENV
+++ unset PE_MPICH_FORTRAN_PKGCONFIG_LIBS
+++ unset PE_MPICH_GENCOMPILERS_AMD
+++ unset PE_MPICH_GENCOMPILERS_AOCC
+++ unset PE_MPICH_GENCOMPILERS_CRAY
+++ unset PE_MPICH_GENCOMPILERS_CRAYCLANG
+++ unset PE_MPICH_GENCOMPILERS_GNU
+++ unset PE_MPICH_GENCOMPILERS_NVIDIA
+++ unset PE_MPICH_GTL_DIR_amd_gfx906
+++ unset PE_MPICH_GTL_DIR_amd_gfx908
+++ unset PE_MPICH_GTL_DIR_amd_gfx90a
+++ unset PE_MPICH_GTL_DIR_amd_gfx940
+++ unset PE_MPICH_GTL_DIR_amd_gfx942
+++ unset PE_MPICH_GTL_DIR_nvidia70
+++ unset PE_MPICH_GTL_DIR_nvidia80
+++ unset PE_MPICH_GTL_DIR_nvidia90
+++ unset PE_MPICH_GTL_DIR_ponteVecchio
+++ unset PE_MPICH_GTL_LIBS_amd_gfx906
+++ unset PE_MPICH_GTL_LIBS_amd_gfx908
+++ unset PE_MPICH_GTL_LIBS_amd_gfx90a
+++ unset PE_MPICH_GTL_LIBS_amd_gfx940
+++ unset PE_MPICH_GTL_LIBS_amd_gfx942
+++ unset PE_MPICH_GTL_LIBS_nvidia70
+++ unset PE_MPICH_GTL_LIBS_nvidia80
+++ unset PE_MPICH_GTL_LIBS_nvidia90
+++ unset PE_MPICH_GTL_LIBS_ponteVecchio
+++ unset PE_MPICH_MODULE_NAME
+++ unset PE_MPICH_PKGCONFIG_LIBS
+++ unset PE_MPICH_PKGCONFIG_VARIABLES
+++ unset PE_MPICH_VOLATILE_PKGCONFIG_PATH
+++ unset PE_MPICH_VOLATILE_PRGENV
+++ unset PE_NETCDF_BASEDIR
+++ unset PE_NETCDF_CXX_PKGCONFIG_LIBS
+++ unset PE_NETCDF_DEFAULT_FIXED_PRGENV
+++ unset PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS
+++ unset PE_NETCDF_FIXED_PRGENV
+++ unset PE_NETCDF_FORTRAN_PKGCONFIG_LIBS
+++ unset PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV
+++ unset PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS
+++ unset PE_NETCDF_MODULE_NAME
+++ unset PE_NETCDF_PKGCONFIG_LIBS
+++ unset PE_NETCDF_REQUIRED_PRODUCTS
+++ unset PE_NVHPC_DEFAULT_FIXED_PKGCONFIG_PATH
+++ unset PE_NVHPC_FIXED_PKGCONFIG_PATH
+++ unset PE_NVIDIA_DEFAULT_FIXED_PKGCONFIG_PATH
+++ unset PE_NVIDIA_FIXED_PKGCONFIG_PATH
+++ unset PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS
+++ unset PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia
+++ unset PE_PAPI_DEFAULT_ACCEL_LIBS
+++ unset PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35
+++ unset PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES
+++ unset PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV
+++ unset PE_PERFTOOLS_MPICH_LIBDIR
+++ unset PE_PKGCONFIG_DEFAULT_LIBS
+++ unset PE_PKGCONFIG_DEFAULT_PRODUCTS
+++ unset PE_PKGCONFIG_LIBS
+++ unset PE_PKGCONFIG_PRODUCTS
+++ unset PE_PKGCONFIG_PRODUCTS_DEFAULT
+++ unset PE_PKG_CONFIG_PATH
+++ unset PE_PRODUCT_LIST
+++ unset PE_SMA_DEFAULT_COMPFLAG
+++ unset PE_SMA_DEFAULT_COMPFLAG_GNU
+++ unset PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64
+++ unset PE_SMA_DEFAULT_DIR_PGI_DEFAULT64
+++ unset PE_SMA_DEFAULT_PKGCONFIG_VARIABLES
+++ unset PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ unset PE_XPMEM_PKGCONFIG_LIBS
+++ unset PKGCONFIG_ENABLED
+++ unset PKG_CONFIG_PATH_DEFAULT
+++ unset PYTHON_PATH
+++ unset _LMFILES_
+++ unset intel_already_loaded
++ unset LD_LIBRARY_PATH
++ unset LIBRARY_PATH
++ unset CPATH
++ unset CMAKE_PREFIX_PATH
++ unset PKG_CONFIG_PATH
++ case "$COMPILER" in
++ module load PrgEnv-intel/8.5.0
+++ /opt/cray/pe/modules/3.2.11.7/bin/modulecmd bash load PrgEnv-intel/8.5.0
++ eval ATP_CFLAGS= ';export' 'ATP_CFLAGS;ATP_CFLAGS_GNU_FORTRAN=-fno-backtrace' ';export' 'ATP_CFLAGS_GNU_FORTRAN;CMAKE_PREFIX_PATH=/scratch/lus/intel/oneapi/mkl/2024.2/lib/cmake:/scratch/lus/intel/oneapi/compiler/2024.2' ';export' 'CMAKE_PREFIX_PATH;CMPLR_ROOT=/scratch/lus/intel/oneapi/compiler/2024.2' ';export' 'CMPLR_ROOT;CPATH=/scratch/lus/intel/oneapi/mkl/2024.2/include' ';export' 'CPATH;CRAYPE_DIR=/opt/cray/pe/craype/2.7.32' ';export' 'CRAYPE_DIR;CRAYPE_NETWORK_TARGET=ofi' ';export' 'CRAYPE_NETWORK_TARGET;CRAYPE_VERSION=2.7.32' ';export' 'CRAYPE_VERSION;CRAY_DSMML_BASEDIR=/opt/cray/pe/dsmml/0.3.0' ';export' 'CRAY_DSMML_BASEDIR;CRAY_DSMML_DIR=/opt/cray/pe/dsmml/0.3.0/dsmml' ';export' 'CRAY_DSMML_DIR;CRAY_DSMML_PREFIX=/opt/cray/pe/dsmml/0.3.0/dsmml' ';export' 'CRAY_DSMML_PREFIX;CRAY_DSMML_ROOTDIR=/opt/cray/pe/dsmml/0.3.0' ';export' 'CRAY_DSMML_ROOTDIR;CRAY_DSMML_VER=0.3.0' ';export' 'CRAY_DSMML_VER;CRAY_LD_LIBRARY_PATH=/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib' ';export' 'CRAY_LD_LIBRARY_PATH;CRAY_LIBSCI_BASE_DIR=/opt/cray/pe/libsci/24.07.0' ';export' 'CRAY_LIBSCI_BASE_DIR;CRAY_LIBSCI_PREFIX=/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64' ';export' 'CRAY_LIBSCI_PREFIX;CRAY_LIBSCI_PREFIX_DIR=/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64' ';export' 'CRAY_LIBSCI_PREFIX_DIR;CRAY_LIBSCI_VERSION=24.07.0' ';export' 'CRAY_LIBSCI_VERSION;CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.30/ofi' ';export' 'CRAY_MPICH_BASEDIR;CRAY_MPICH_DIR=/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1' ';export' 'CRAY_MPICH_DIR;CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1' ';export' 'CRAY_MPICH_PREFIX;CRAY_MPICH_VER=8.1.30' ';export' 'CRAY_MPICH_VER;CRAY_MPICH_VERSION=8.1.30' ';export' 'CRAY_MPICH_VERSION;CRAY_PE_MODULES=cray-libsci' ';export' 'CRAY_PE_MODULES;CRAY_PRGENVINTEL=loaded' ';export' 'CRAY_PRGENVINTEL;DIAGUTIL_PATH=/scratch/lus/intel/oneapi/compiler/2024.2/etc/compiler/sys_check/sys_check.sh' ';export' 'DIAGUTIL_PATH;INTEL_COMPILER_TYPE=RECOMMENDED' ';export' 'INTEL_COMPILER_TYPE;INTEL_PATH=/scratch/lus/intel/oneapi/compiler/2024.2' ';export' 'INTEL_PATH;INTEL_VERSION=2024.2' ';export' 'INTEL_VERSION;LD_LIBRARY_PATH=/opt/cray/libfabric/1.20.1/lib64:/scratch/lus/intel/oneapi/mkl/2024.2/lib:/scratch/lus/intel/oneapi/compiler/2024.2/opt/compiler/lib:/scratch/lus/intel/oneapi/compiler/2024.2/lib' ';export' 'LD_LIBRARY_PATH;LIBRARY_PATH=/scratch/lus/intel/oneapi/mkl/2024.2/lib/:/scratch/lus/intel/oneapi/compiler/2024.2/lib' ';export' 'LIBRARY_PATH;LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:craype-network-ofi:cray-mpich/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0' ';export' 'LOADEDMODULES;MANPATH=/opt/cray/pe/libsci/24.07.0/share/man:/opt/cray/pe/mpich/8.1.30/ofi/man:/opt/cray/pe/mpich/8.1.30/man/mpich:/opt/cray/libfabric/1.20.1/share/man:/opt/cray/pe/dsmml/0.3.0/dsmml/man/:/opt/cray/pe/craype/2.7.32/man:/scratch/lus/intel/oneapi/compiler/2024.2/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/c3/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/cray/pe/man' ';export' 'MANPATH;MKLROOT=/scratch/lus/intel/oneapi/mkl/2024.2' ';export' 'MKLROOT;MPICH_DIR=/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1' ';export' 'MPICH_DIR;OCL_ICD_FILENAMES=/scratch/lus/intel/oneapi/compiler/2024.2/lib/libintelocl.so' ';export' 'OCL_ICD_FILENAMES;PATH=/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/scratch/lus/intel/oneapi/mkl/2024.2/bin/:/scratch/lus/intel/oneapi/compiler/2024.2/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/opt/cray/pe/bin' ';export' 'PATH;PE_AOCC_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.9.0.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/AOCC/4.1/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/AOCC/4.1/lib/pkgconfig' ';export' 'PE_AOCC_DEFAULT_FIXED_PKGCONFIG_PATH;PE_AOCC_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/AOCC/4.1/x86_64/lib/pkgconfig' ';export' 'PE_AOCC_FIXED_PKGCONFIG_PATH;PE_ATP_PKGCONFIG_VARIABLES=ATP_CFLAGS_@prgenv@_@language@' ';export' 'PE_ATP_PKGCONFIG_VARIABLES;PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.9.0.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/CRAYCLANG/17.0/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/CRAYCLANG/18.0/lib/pkgconfig' ';export' 'PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH;PE_CRAYCLANG_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/CRAYCLANG/17.0/x86_64/lib/pkgconfig' ';export' 'PE_CRAYCLANG_FIXED_PKGCONFIG_PATH;PE_CRAY_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/CRAY/17.0/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/CRAY/18.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/CRAY/18.0/lib/pkgconfig' ';export' 'PE_CRAY_DEFAULT_FIXED_PKGCONFIG_PATH;PE_CRAY_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/CRAY/17.0/x86_64/lib/pkgconfig' ';export' 'PE_CRAY_FIXED_PKGCONFIG_PATH;PE_DSMML_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/dsmml/0.3.0/dsmml/dsmml/lib/pkgconfig' ';export' 'PE_DSMML_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_DSMML_MODULE_NAME=cray-dsmml' ';export' 'PE_DSMML_MODULE_NAME;PE_DSMML_PKGCONFIG_LIBS=dsmml' ';export' 'PE_DSMML_PKGCONFIG_LIBS;PE_DSMML_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/dsmml/0.3.0/dsmml/lib/pkgconfig' ';export' 'PE_DSMML_VOLATILE_PKGCONFIG_PATH;PE_ENV=INTEL' ';export' 'PE_ENV;PE_FFTW_DEFAULT_TARGET_share=share' ';export' 'PE_FFTW_DEFAULT_TARGET_share;PE_FFTW_DEFAULT_TARGET_x86_64=x86_64' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_64;PE_FFTW_DEFAULT_TARGET_x86_cascadelake=x86_cascadelake' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_cascadelake;PE_FFTW_DEFAULT_TARGET_x86_genoa=x86_genoa' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_genoa;PE_FFTW_DEFAULT_TARGET_x86_icelake=x86_icelake' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_icelake;PE_FFTW_DEFAULT_TARGET_x86_milan=x86_milan' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_milan;PE_FFTW_DEFAULT_TARGET_x86_milan_x=x86_milan_x' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_milan_x;PE_FFTW_DEFAULT_TARGET_x86_rome=x86_rome' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_rome;PE_FFTW_DEFAULT_TARGET_x86_skylake=x86_skylake' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_skylake;PE_FFTW_DEFAULT_TARGET_x86_spr=x86_spr' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_spr;PE_FFTW_DEFAULT_TARGET_x86_trento=x86_trento' ';export' 'PE_FFTW_DEFAULT_TARGET_x86_trento;PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/fftw/3.3.10.8/@PE_FFTW_DEFAULT_TARGET@/lib/pkgconfig' ';export' 'PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS=mpichf90' ';export' 'PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS;PE_FORTRAN_PKGCONFIG_LIBS=mpichf90' ';export' 'PE_FORTRAN_PKGCONFIG_LIBS;PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.9.0.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/GNU/12.3/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/GNU/12.3/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/GNU/12.3/lib/pkgconfig' ';export' 'PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH;PE_GNU_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/GNU/12.3/x86_64/lib/pkgconfig' ';export' 'PE_GNU_FIXED_PKGCONFIG_PATH;PE_HDF5_DEFAULT_FIXED_PRGENV=GNU\' 'CRAY\' 'CRAYCLANG\' 'INTEL\' 'AOCC\' NVIDIA ';export' 'PE_HDF5_DEFAULT_FIXED_PRGENV;PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV=GNU\' 'CRAY\' 'CRAYCLANG\' 'INTEL\' 'AOCC\' NVIDIA ';export' 'PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV;PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH' ';export' 'PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS;PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.9.0.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/INTEL/2023.2/lib/pkgconfig' ';export' 'PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH;PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib/pkgconfig' ';export' 'PE_INTEL_FIXED_PKGCONFIG_PATH;PE_LIBSCI_DEFAULT_FIXED_PRGENV=GNU\' 'CRAY\' 'CRAYCLANG\' 'INTEL\' 'AOCC\' 'NVIDIA\' NVHPC ';export' 'PE_LIBSCI_DEFAULT_FIXED_PRGENV;PE_LIBSCI_DEFAULT_GENCOMPILERS_AOCC_x86_64=4.1' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_AOCC_x86_64;PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=17.0' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64;PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64=17.0' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64;PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64=12.3' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64;PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64=2023.2' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64;PE_LIBSCI_DEFAULT_GENCOMPILERS_NVHPC_x86_64=23.3' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_NVHPC_x86_64;PE_LIBSCI_DEFAULT_GENCOMPILERS_NVIDIA_x86_64=23.3' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_NVIDIA_x86_64;PE_LIBSCI_DEFAULT_GENCOMPS_AOCC_x86_64=41' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPS_AOCC_x86_64;PE_LIBSCI_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=170' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPS_CRAYCLANG_x86_64;PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64=170' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64;PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64=123' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64;PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64=20232' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64;PE_LIBSCI_DEFAULT_GENCOMPS_NVHPC_x86_64=233' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPS_NVHPC_x86_64;PE_LIBSCI_DEFAULT_GENCOMPS_NVIDIA_x86_64=233' ';export' 'PE_LIBSCI_DEFAULT_GENCOMPS_NVIDIA_x86_64;PE_LIBSCI_DEFAULT_OMP_REQUIRES=' ';export' 'PE_LIBSCI_DEFAULT_OMP_REQUIRES;PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp=_mp' ';export' 'PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp;PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES=PE_LIBSCI_DEFAULT_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME' ';export' 'PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES;PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/@PRGENV@/@PE_LIBSCI_DEFAULT_GENCOMPS@/x86_64/lib/pkgconfig' ';export' 'PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_LIBSCI_DEFAULT_VOLATILE_PRGENV=GNU\' 'CRAY\' 'CRAYCLANG\' 'INTEL\' 'AOCC\' 'NVIDIA\' NVHPC ';export' 'PE_LIBSCI_DEFAULT_VOLATILE_PRGENV;PE_LIBSCI_DIR=/opt/cray/pe/libsci/24.07.0' ';export' 'PE_LIBSCI_DIR;PE_LIBSCI_FIXED_PRGENV=GNU\' 'CRAY\' 'CRAYCLANG\' 'INTEL\' 'AOCC\' 'NVIDIA\' NVHPC ';export' 'PE_LIBSCI_FIXED_PRGENV;PE_LIBSCI_GENCOMPILERS_AOCC_x86_64=4.1' ';export' 'PE_LIBSCI_GENCOMPILERS_AOCC_x86_64;PE_LIBSCI_GENCOMPILERS_CRAYCLANG_x86_64=17.0' ';export' 'PE_LIBSCI_GENCOMPILERS_CRAYCLANG_x86_64;PE_LIBSCI_GENCOMPILERS_CRAY_x86_64=17.0' ';export' 'PE_LIBSCI_GENCOMPILERS_CRAY_x86_64;PE_LIBSCI_GENCOMPILERS_GNU_x86_64=12.3' ';export' 'PE_LIBSCI_GENCOMPILERS_GNU_x86_64;PE_LIBSCI_GENCOMPILERS_INTEL_x86_64=2023.2' ';export' 'PE_LIBSCI_GENCOMPILERS_INTEL_x86_64;PE_LIBSCI_GENCOMPILERS_NVHPC_x86_64=23.3' ';export' 'PE_LIBSCI_GENCOMPILERS_NVHPC_x86_64;PE_LIBSCI_GENCOMPILERS_NVIDIA_x86_64=23.3' ';export' 'PE_LIBSCI_GENCOMPILERS_NVIDIA_x86_64;PE_LIBSCI_GENCOMPS_AOCC_x86_64=41' ';export' 'PE_LIBSCI_GENCOMPS_AOCC_x86_64;PE_LIBSCI_GENCOMPS_CRAYCLANG_x86_64=170' ';export' 'PE_LIBSCI_GENCOMPS_CRAYCLANG_x86_64;PE_LIBSCI_GENCOMPS_CRAY_x86_64=170' ';export' 'PE_LIBSCI_GENCOMPS_CRAY_x86_64;PE_LIBSCI_GENCOMPS_GNU_x86_64=123' ';export' 'PE_LIBSCI_GENCOMPS_GNU_x86_64;PE_LIBSCI_GENCOMPS_INTEL_x86_64=20232' ';export' 'PE_LIBSCI_GENCOMPS_INTEL_x86_64;PE_LIBSCI_GENCOMPS_NVHPC_x86_64=233' ';export' 'PE_LIBSCI_GENCOMPS_NVHPC_x86_64;PE_LIBSCI_GENCOMPS_NVIDIA_x86_64=233' ';export' 'PE_LIBSCI_GENCOMPS_NVIDIA_x86_64;PE_LIBSCI_MODULE_NAME=cray-libsci/24.07.0' ';export' 'PE_LIBSCI_MODULE_NAME;PE_LIBSCI_OMP_REQUIRES=' ';export' 'PE_LIBSCI_OMP_REQUIRES;PE_LIBSCI_OMP_REQUIRES_openmp=_mp' ';export' 'PE_LIBSCI_OMP_REQUIRES_openmp;PE_LIBSCI_PKGCONFIG_LIBS=libsci_mpi:libsci' ';export' 'PE_LIBSCI_PKGCONFIG_LIBS;PE_LIBSCI_PKGCONFIG_VARIABLES=PE_LIBSCI_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME' ';export' 'PE_LIBSCI_PKGCONFIG_VARIABLES;PE_LIBSCI_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/@PRGENV@/@PE_LIBSCI_GENCOMPS@/x86_64/lib/pkgconfig' ';export' 'PE_LIBSCI_VOLATILE_PKGCONFIG_PATH;PE_LIBSCI_VOLATILE_PRGENV=GNU\' 'CRAY\' 'CRAYCLANG\' 'INTEL\' 'AOCC\' 'NVIDIA\' NVHPC ';export' 'PE_LIBSCI_VOLATILE_PRGENV;PE_MPICH_DEFAULT_FIXED_PRGENV=INTEL' ';export' 'PE_MPICH_DEFAULT_FIXED_PRGENV;PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS=mpichf90' ';export' 'PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS;PE_MPICH_DEFAULT_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx906;PE_MPICH_DEFAULT_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx908;PE_MPICH_DEFAULT_GTL_DIR_amd_gfx90a=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx90a;PE_MPICH_DEFAULT_GTL_DIR_amd_gfx940=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx940;PE_MPICH_DEFAULT_GTL_DIR_amd_gfx942=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx942;PE_MPICH_DEFAULT_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_DEFAULT_GTL_DIR_nvidia70;PE_MPICH_DEFAULT_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_DEFAULT_GTL_DIR_nvidia80;PE_MPICH_DEFAULT_GTL_DIR_nvidia90=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_DEFAULT_GTL_DIR_nvidia90;PE_MPICH_DEFAULT_GTL_DIR_ponteVecchio=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_DEFAULT_GTL_DIR_ponteVecchio;PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa' ';export' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx906;PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa' ';export' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx908;PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx90a=-lmpi_gtl_hsa' ';export' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx90a;PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx940=-lmpi_gtl_hsa' ';export' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx940;PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx942=-lmpi_gtl_hsa' ';export' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx942;PE_MPICH_DEFAULT_GTL_LIBS_nvidia70=-lmpi_gtl_cuda' ';export' 'PE_MPICH_DEFAULT_GTL_LIBS_nvidia70;PE_MPICH_DEFAULT_GTL_LIBS_nvidia80=-lmpi_gtl_cuda' ';export' 'PE_MPICH_DEFAULT_GTL_LIBS_nvidia80;PE_MPICH_DEFAULT_GTL_LIBS_nvidia90=-lmpi_gtl_cuda' ';export' 'PE_MPICH_DEFAULT_GTL_LIBS_nvidia90;PE_MPICH_DEFAULT_GTL_LIBS_ponteVecchio=-lmpi_gtl_ze' ';export' 'PE_MPICH_DEFAULT_GTL_LIBS_ponteVecchio;PE_MPICH_DEFAULT_PKGCONFIG_LIBS=mpich' ';export' 'PE_MPICH_DEFAULT_PKGCONFIG_LIBS;PE_MPICH_DEFAULT_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@' ';export' 'PE_MPICH_DEFAULT_PKGCONFIG_VARIABLES;PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.30/ofi/@PRGENV@/@PE_MPICH_DEFAULT_GENCOMPS@/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/gtl/lib/pkgconfig' ';export' 'PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH;PE_MPICH_DEFAULT_VOLATILE_PRGENV=AMD\' 'AOCC\' 'CRAY\' 'CRAYCLANG\' 'GNU\' NVIDIA ';export' 'PE_MPICH_DEFAULT_VOLATILE_PRGENV;PE_MPICH_FIXED_PRGENV=INTEL' ';export' 'PE_MPICH_FIXED_PRGENV;PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90' ';export' 'PE_MPICH_FORTRAN_PKGCONFIG_LIBS;PE_MPICH_GENCOMPILERS_AMD=6.0' ';export' 'PE_MPICH_GENCOMPILERS_AMD;PE_MPICH_GENCOMPILERS_AOCC=4.1' ';export' 'PE_MPICH_GENCOMPILERS_AOCC;PE_MPICH_GENCOMPILERS_CRAY=17.0' ';export' 'PE_MPICH_GENCOMPILERS_CRAY;PE_MPICH_GENCOMPILERS_CRAYCLANG=17.0' ';export' 'PE_MPICH_GENCOMPILERS_CRAYCLANG;PE_MPICH_GENCOMPILERS_GNU=12.3' ';export' 'PE_MPICH_GENCOMPILERS_GNU;PE_MPICH_GENCOMPILERS_NVIDIA=23.3' ';export' 'PE_MPICH_GENCOMPILERS_NVIDIA;PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_amd_gfx906;PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_amd_gfx908;PE_MPICH_GTL_DIR_amd_gfx90a=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_amd_gfx90a;PE_MPICH_GTL_DIR_amd_gfx940=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_amd_gfx940;PE_MPICH_GTL_DIR_amd_gfx942=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_amd_gfx942;PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_nvidia70;PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_nvidia80;PE_MPICH_GTL_DIR_nvidia90=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_nvidia90;PE_MPICH_GTL_DIR_ponteVecchio=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_ponteVecchio;PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa' ';export' 'PE_MPICH_GTL_LIBS_amd_gfx906;PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa' ';export' 'PE_MPICH_GTL_LIBS_amd_gfx908;PE_MPICH_GTL_LIBS_amd_gfx90a=-lmpi_gtl_hsa' ';export' 'PE_MPICH_GTL_LIBS_amd_gfx90a;PE_MPICH_GTL_LIBS_amd_gfx940=-lmpi_gtl_hsa' ';export' 'PE_MPICH_GTL_LIBS_amd_gfx940;PE_MPICH_GTL_LIBS_amd_gfx942=-lmpi_gtl_hsa' ';export' 'PE_MPICH_GTL_LIBS_amd_gfx942;PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda' ';export' 'PE_MPICH_GTL_LIBS_nvidia70;PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda' ';export' 'PE_MPICH_GTL_LIBS_nvidia80;PE_MPICH_GTL_LIBS_nvidia90=-lmpi_gtl_cuda' ';export' 'PE_MPICH_GTL_LIBS_nvidia90;PE_MPICH_GTL_LIBS_ponteVecchio=-lmpi_gtl_ze' ';export' 'PE_MPICH_GTL_LIBS_ponteVecchio;PE_MPICH_MODULE_NAME=cray-mpich' ';export' 'PE_MPICH_MODULE_NAME;PE_MPICH_PKGCONFIG_LIBS=mpich' ';export' 'PE_MPICH_PKGCONFIG_LIBS;PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@' ';export' 'PE_MPICH_PKGCONFIG_VARIABLES;PE_MPICH_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.30/ofi/@PRGENV@/@PE_MPICH_GENCOMPS@/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/gtl/lib/pkgconfig' ';export' 'PE_MPICH_VOLATILE_PKGCONFIG_PATH;PE_MPICH_VOLATILE_PRGENV=AMD\' 'AOCC\' 'CRAY\' 'CRAYCLANG\' 'GNU\' NVIDIA ';export' 'PE_MPICH_VOLATILE_PRGENV;PE_NETCDF_DEFAULT_FIXED_PRGENV=GNU\' 'CRAYCLANG\' 'INTEL\' 'AOCC\' NVIDIA ';export' 'PE_NETCDF_DEFAULT_FIXED_PRGENV;PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5' ';export' 'PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS;PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV=GNU\' 'CRAYCLANG\' 'INTEL\' 'AOCC\' NVIDIA ';export' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV;PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5_PARALLEL' ';export' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS;PE_NVHPC_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/NVHPC/23.3/x86_64/lib/pkgconfig' ';export' 'PE_NVHPC_DEFAULT_FIXED_PKGCONFIG_PATH;PE_NVHPC_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/NVHPC/23.3/x86_64/lib/pkgconfig' ';export' 'PE_NVHPC_FIXED_PKGCONFIG_PATH;PE_NVIDIA_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.9.0.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/NVIDIA/23.3/lib/pkgconfig' ';export' 'PE_NVIDIA_DEFAULT_FIXED_PKGCONFIG_PATH;PE_NVIDIA_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib/pkgconfig' ';export' 'PE_NVIDIA_FIXED_PKGCONFIG_PATH;PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS=' ';export' 'PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS;PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia=,-lcupti,-lcudart,-lcuda' ';export' 'PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia;PE_PAPI_DEFAULT_ACCEL_LIBS=' ';export' 'PE_PAPI_DEFAULT_ACCEL_LIBS;PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35=,-lcupti,-lcudart,-lcuda' ';export' 'PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35;PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES=PE_PAPI_ACCEL_LIBS_@accelerator@\' PE_PAPI_ACCEL_FAMILY_LIBS_@accelerator_family@ ';export' 'PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES;PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV=GNU\' 'CRAYCLANG\' 'INTEL\' 'AOCC\' NVIDIA ';export' 'PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV;PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib' ';export' 'PE_PERFTOOLS_MPICH_LIBDIR;PE_PKGCONFIG_DEFAULT_LIBS=mpich' ';export' 'PE_PKGCONFIG_DEFAULT_LIBS;PE_PKGCONFIG_DEFAULT_PRODUCTS=PE_PARALLEL_NETCDF:PE_NETCDF_HDF5PARALLEL:PE_NETCDF:PE_MPICH:PE_LIBSCI:PE_HDF5_PARALLEL:PE_HDF5:PE_FFTW' ';export' 'PE_PKGCONFIG_DEFAULT_PRODUCTS;PE_PKGCONFIG_LIBS=libsci_mpi:libsci:mpich:dsmml' ';export' 'PE_PKGCONFIG_LIBS;PE_PKGCONFIG_PRODUCTS=PE_LIBSCI:PE_MPICH:PE_DSMML:PE_ATP' ';export' 'PE_PKGCONFIG_PRODUCTS;PE_PKGCONFIG_PRODUCTS_DEFAULT=PE_PAPI' ';export' 'PE_PKGCONFIG_PRODUCTS_DEFAULT;PE_PKG_CONFIG_PATH=/opt/cray/pe/valgrind4hpc/2.13.3/lib/pkgconfig:/opt/cray/pe/cti/2.18.4/lib/pkgconfig:/opt/cray/pe/atp/3.15.4/lib/pkgconfig' ';export' 'PE_PKG_CONFIG_PATH;PE_PRODUCT_LIST=CRAY_LIBSCI:CRAYPE' ';export' 'PE_PRODUCT_LIST;PE_SMA_DEFAULT_COMPFLAG=' ';export' 'PE_SMA_DEFAULT_COMPFLAG;PE_SMA_DEFAULT_COMPFLAG_GNU=-fcray-pointer' ';export' 'PE_SMA_DEFAULT_COMPFLAG_GNU;PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64=64' ';export' 'PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64;PE_SMA_DEFAULT_DIR_PGI_DEFAULT64=64' ';export' 'PE_SMA_DEFAULT_DIR_PGI_DEFAULT64;PE_SMA_DEFAULT_PKGCONFIG_VARIABLES=PE_SMA_COMPFLAG_@prgenv@' ';export' 'PE_SMA_DEFAULT_PKGCONFIG_VARIABLES;PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/sma/11.7.2/ofi/sma@PE_SMA_DEFAULT_DIR_DEFAULT64@/lib64/pkgconfig' ';export' 'PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH;PKGCONFIG_ENABLED=1' ';export' 'PKGCONFIG_ENABLED;PKG_CONFIG_PATH=/opt/cray/libfabric/1.20.1/lib64/pkgconfig:/opt/cray/pe/craype/2.7.32/pkg-config:/scratch/lus/intel/oneapi/mkl/2024.2/lib/pkgconfig:/scratch/lus/intel/oneapi/compiler/2024.2/lib/pkgconfig:/opt/cray/pe/atp/3.15.4/lib/pkgconfig' ';export' 'PKG_CONFIG_PATH;PKG_CONFIG_PATH_DEFAULT=/opt/cray/pe/papi/7.1.0.2/lib64/pkgconfig' ';export' 'PKG_CONFIG_PATH_DEFAULT;_LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/opt/cray/pe/modulefiles/cray-mpich/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0' ';export' '_LMFILES_;intel_already_loaded=0' ';export' 'intel_already_loaded;'
+++ ATP_CFLAGS=
+++ export ATP_CFLAGS
+++ ATP_CFLAGS_GNU_FORTRAN=-fno-backtrace
+++ export ATP_CFLAGS_GNU_FORTRAN
+++ CMAKE_PREFIX_PATH=/scratch/lus/intel/oneapi/mkl/2024.2/lib/cmake:/scratch/lus/intel/oneapi/compiler/2024.2
+++ export CMAKE_PREFIX_PATH
+++ CMPLR_ROOT=/scratch/lus/intel/oneapi/compiler/2024.2
+++ export CMPLR_ROOT
+++ CPATH=/scratch/lus/intel/oneapi/mkl/2024.2/include
+++ export CPATH
+++ CRAYPE_DIR=/opt/cray/pe/craype/2.7.32
+++ export CRAYPE_DIR
+++ CRAYPE_NETWORK_TARGET=ofi
+++ export CRAYPE_NETWORK_TARGET
+++ CRAYPE_VERSION=2.7.32
+++ export CRAYPE_VERSION
+++ CRAY_DSMML_BASEDIR=/opt/cray/pe/dsmml/0.3.0
+++ export CRAY_DSMML_BASEDIR
+++ CRAY_DSMML_DIR=/opt/cray/pe/dsmml/0.3.0/dsmml
+++ export CRAY_DSMML_DIR
+++ CRAY_DSMML_PREFIX=/opt/cray/pe/dsmml/0.3.0/dsmml
+++ export CRAY_DSMML_PREFIX
+++ CRAY_DSMML_ROOTDIR=/opt/cray/pe/dsmml/0.3.0
+++ export CRAY_DSMML_ROOTDIR
+++ CRAY_DSMML_VER=0.3.0
+++ export CRAY_DSMML_VER
+++ CRAY_LD_LIBRARY_PATH=/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib
+++ export CRAY_LD_LIBRARY_PATH
+++ CRAY_LIBSCI_BASE_DIR=/opt/cray/pe/libsci/24.07.0
+++ export CRAY_LIBSCI_BASE_DIR
+++ CRAY_LIBSCI_PREFIX=/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64
+++ export CRAY_LIBSCI_PREFIX
+++ CRAY_LIBSCI_PREFIX_DIR=/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64
+++ export CRAY_LIBSCI_PREFIX_DIR
+++ CRAY_LIBSCI_VERSION=24.07.0
+++ export CRAY_LIBSCI_VERSION
+++ CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.30/ofi
+++ export CRAY_MPICH_BASEDIR
+++ CRAY_MPICH_DIR=/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1
+++ export CRAY_MPICH_DIR
+++ CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1
+++ export CRAY_MPICH_PREFIX
+++ CRAY_MPICH_VER=8.1.30
+++ export CRAY_MPICH_VER
+++ CRAY_MPICH_VERSION=8.1.30
+++ export CRAY_MPICH_VERSION
+++ CRAY_PE_MODULES=cray-libsci
+++ export CRAY_PE_MODULES
+++ CRAY_PRGENVINTEL=loaded
+++ export CRAY_PRGENVINTEL
+++ DIAGUTIL_PATH=/scratch/lus/intel/oneapi/compiler/2024.2/etc/compiler/sys_check/sys_check.sh
+++ export DIAGUTIL_PATH
+++ INTEL_COMPILER_TYPE=RECOMMENDED
+++ export INTEL_COMPILER_TYPE
+++ INTEL_PATH=/scratch/lus/intel/oneapi/compiler/2024.2
+++ export INTEL_PATH
+++ INTEL_VERSION=2024.2
+++ export INTEL_VERSION
+++ LD_LIBRARY_PATH=/opt/cray/libfabric/1.20.1/lib64:/scratch/lus/intel/oneapi/mkl/2024.2/lib:/scratch/lus/intel/oneapi/compiler/2024.2/opt/compiler/lib:/scratch/lus/intel/oneapi/compiler/2024.2/lib
+++ export LD_LIBRARY_PATH
+++ LIBRARY_PATH=/scratch/lus/intel/oneapi/mkl/2024.2/lib/:/scratch/lus/intel/oneapi/compiler/2024.2/lib
+++ export LIBRARY_PATH
+++ LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:craype-network-ofi:cray-mpich/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0
+++ export LOADEDMODULES
+++ MANPATH=/opt/cray/pe/libsci/24.07.0/share/man:/opt/cray/pe/mpich/8.1.30/ofi/man:/opt/cray/pe/mpich/8.1.30/man/mpich:/opt/cray/libfabric/1.20.1/share/man:/opt/cray/pe/dsmml/0.3.0/dsmml/man/:/opt/cray/pe/craype/2.7.32/man:/scratch/lus/intel/oneapi/compiler/2024.2/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/c3/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/cray/pe/man
+++ export MANPATH
+++ MKLROOT=/scratch/lus/intel/oneapi/mkl/2024.2
+++ export MKLROOT
+++ MPICH_DIR=/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1
+++ export MPICH_DIR
+++ OCL_ICD_FILENAMES=/scratch/lus/intel/oneapi/compiler/2024.2/lib/libintelocl.so
+++ export OCL_ICD_FILENAMES
+++ PATH=/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/scratch/lus/intel/oneapi/mkl/2024.2/bin/:/scratch/lus/intel/oneapi/compiler/2024.2/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/opt/cray/pe/bin
+++ export PATH
+++ PE_AOCC_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.9.0.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/AOCC/4.1/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/AOCC/4.1/lib/pkgconfig
+++ export PE_AOCC_DEFAULT_FIXED_PKGCONFIG_PATH
+++ PE_AOCC_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/AOCC/4.1/x86_64/lib/pkgconfig
+++ export PE_AOCC_FIXED_PKGCONFIG_PATH
+++ PE_ATP_PKGCONFIG_VARIABLES=ATP_CFLAGS_@prgenv@_@language@
+++ export PE_ATP_PKGCONFIG_VARIABLES
+++ PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.9.0.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/CRAYCLANG/17.0/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/CRAYCLANG/18.0/lib/pkgconfig
+++ export PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH
+++ PE_CRAYCLANG_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/CRAYCLANG/17.0/x86_64/lib/pkgconfig
+++ export PE_CRAYCLANG_FIXED_PKGCONFIG_PATH
+++ PE_CRAY_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/CRAY/17.0/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/CRAY/18.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/CRAY/18.0/lib/pkgconfig
+++ export PE_CRAY_DEFAULT_FIXED_PKGCONFIG_PATH
+++ PE_CRAY_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/CRAY/17.0/x86_64/lib/pkgconfig
+++ export PE_CRAY_FIXED_PKGCONFIG_PATH
+++ PE_DSMML_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/dsmml/0.3.0/dsmml/dsmml/lib/pkgconfig
+++ export PE_DSMML_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_DSMML_MODULE_NAME=cray-dsmml
+++ export PE_DSMML_MODULE_NAME
+++ PE_DSMML_PKGCONFIG_LIBS=dsmml
+++ export PE_DSMML_PKGCONFIG_LIBS
+++ PE_DSMML_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/dsmml/0.3.0/dsmml/lib/pkgconfig
+++ export PE_DSMML_VOLATILE_PKGCONFIG_PATH
+++ PE_ENV=INTEL
+++ export PE_ENV
+++ PE_FFTW_DEFAULT_TARGET_share=share
+++ export PE_FFTW_DEFAULT_TARGET_share
+++ PE_FFTW_DEFAULT_TARGET_x86_64=x86_64
+++ export PE_FFTW_DEFAULT_TARGET_x86_64
+++ PE_FFTW_DEFAULT_TARGET_x86_cascadelake=x86_cascadelake
+++ export PE_FFTW_DEFAULT_TARGET_x86_cascadelake
+++ PE_FFTW_DEFAULT_TARGET_x86_genoa=x86_genoa
+++ export PE_FFTW_DEFAULT_TARGET_x86_genoa
+++ PE_FFTW_DEFAULT_TARGET_x86_icelake=x86_icelake
+++ export PE_FFTW_DEFAULT_TARGET_x86_icelake
+++ PE_FFTW_DEFAULT_TARGET_x86_milan=x86_milan
+++ export PE_FFTW_DEFAULT_TARGET_x86_milan
+++ PE_FFTW_DEFAULT_TARGET_x86_milan_x=x86_milan_x
+++ export PE_FFTW_DEFAULT_TARGET_x86_milan_x
+++ PE_FFTW_DEFAULT_TARGET_x86_rome=x86_rome
+++ export PE_FFTW_DEFAULT_TARGET_x86_rome
+++ PE_FFTW_DEFAULT_TARGET_x86_skylake=x86_skylake
+++ export PE_FFTW_DEFAULT_TARGET_x86_skylake
+++ PE_FFTW_DEFAULT_TARGET_x86_spr=x86_spr
+++ export PE_FFTW_DEFAULT_TARGET_x86_spr
+++ PE_FFTW_DEFAULT_TARGET_x86_trento=x86_trento
+++ export PE_FFTW_DEFAULT_TARGET_x86_trento
+++ PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/fftw/3.3.10.8/@PE_FFTW_DEFAULT_TARGET@/lib/pkgconfig
+++ export PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS=mpichf90
+++ export PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS
+++ PE_FORTRAN_PKGCONFIG_LIBS=mpichf90
+++ export PE_FORTRAN_PKGCONFIG_LIBS
+++ PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.9.0.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/GNU/12.3/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/GNU/12.3/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/GNU/12.3/lib/pkgconfig
+++ export PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH
+++ PE_GNU_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/GNU/12.3/x86_64/lib/pkgconfig
+++ export PE_GNU_FIXED_PKGCONFIG_PATH
+++ PE_HDF5_DEFAULT_FIXED_PRGENV='GNU CRAY CRAYCLANG INTEL AOCC NVIDIA'
+++ export PE_HDF5_DEFAULT_FIXED_PRGENV
+++ PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV='GNU CRAY CRAYCLANG INTEL AOCC NVIDIA'
+++ export PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV
+++ PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH
+++ export PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS
+++ PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.9.0.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/INTEL/2023.2/lib/pkgconfig
+++ export PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH
+++ PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib/pkgconfig
+++ export PE_INTEL_FIXED_PKGCONFIG_PATH
+++ PE_LIBSCI_DEFAULT_FIXED_PRGENV='GNU CRAY CRAYCLANG INTEL AOCC NVIDIA NVHPC'
+++ export PE_LIBSCI_DEFAULT_FIXED_PRGENV
+++ PE_LIBSCI_DEFAULT_GENCOMPILERS_AOCC_x86_64=4.1
+++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_AOCC_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64=17.0
+++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAYCLANG_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64=17.0
+++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64=12.3
+++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64=2023.2
+++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPILERS_NVHPC_x86_64=23.3
+++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_NVHPC_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPILERS_NVIDIA_x86_64=23.3
+++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_NVIDIA_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPS_AOCC_x86_64=41
+++ export PE_LIBSCI_DEFAULT_GENCOMPS_AOCC_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPS_CRAYCLANG_x86_64=170
+++ export PE_LIBSCI_DEFAULT_GENCOMPS_CRAYCLANG_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64=170
+++ export PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64=123
+++ export PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64=20232
+++ export PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPS_NVHPC_x86_64=233
+++ export PE_LIBSCI_DEFAULT_GENCOMPS_NVHPC_x86_64
+++ PE_LIBSCI_DEFAULT_GENCOMPS_NVIDIA_x86_64=233
+++ export PE_LIBSCI_DEFAULT_GENCOMPS_NVIDIA_x86_64
+++ PE_LIBSCI_DEFAULT_OMP_REQUIRES=
+++ export PE_LIBSCI_DEFAULT_OMP_REQUIRES
+++ PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp=_mp
+++ export PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp
+++ PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES=PE_LIBSCI_DEFAULT_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME
+++ export PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES
+++ PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/@PRGENV@/@PE_LIBSCI_DEFAULT_GENCOMPS@/x86_64/lib/pkgconfig
+++ export PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_LIBSCI_DEFAULT_VOLATILE_PRGENV='GNU CRAY CRAYCLANG INTEL AOCC NVIDIA NVHPC'
+++ export PE_LIBSCI_DEFAULT_VOLATILE_PRGENV
+++ PE_LIBSCI_DIR=/opt/cray/pe/libsci/24.07.0
+++ export PE_LIBSCI_DIR
+++ PE_LIBSCI_FIXED_PRGENV='GNU CRAY CRAYCLANG INTEL AOCC NVIDIA NVHPC'
+++ export PE_LIBSCI_FIXED_PRGENV
+++ PE_LIBSCI_GENCOMPILERS_AOCC_x86_64=4.1
+++ export PE_LIBSCI_GENCOMPILERS_AOCC_x86_64
+++ PE_LIBSCI_GENCOMPILERS_CRAYCLANG_x86_64=17.0
+++ export PE_LIBSCI_GENCOMPILERS_CRAYCLANG_x86_64
+++ PE_LIBSCI_GENCOMPILERS_CRAY_x86_64=17.0
+++ export PE_LIBSCI_GENCOMPILERS_CRAY_x86_64
+++ PE_LIBSCI_GENCOMPILERS_GNU_x86_64=12.3
+++ export PE_LIBSCI_GENCOMPILERS_GNU_x86_64
+++ PE_LIBSCI_GENCOMPILERS_INTEL_x86_64=2023.2
+++ export PE_LIBSCI_GENCOMPILERS_INTEL_x86_64
+++ PE_LIBSCI_GENCOMPILERS_NVHPC_x86_64=23.3
+++ export PE_LIBSCI_GENCOMPILERS_NVHPC_x86_64
+++ PE_LIBSCI_GENCOMPILERS_NVIDIA_x86_64=23.3
+++ export PE_LIBSCI_GENCOMPILERS_NVIDIA_x86_64
+++ PE_LIBSCI_GENCOMPS_AOCC_x86_64=41
+++ export PE_LIBSCI_GENCOMPS_AOCC_x86_64
+++ PE_LIBSCI_GENCOMPS_CRAYCLANG_x86_64=170
+++ export PE_LIBSCI_GENCOMPS_CRAYCLANG_x86_64
+++ PE_LIBSCI_GENCOMPS_CRAY_x86_64=170
+++ export PE_LIBSCI_GENCOMPS_CRAY_x86_64
+++ PE_LIBSCI_GENCOMPS_GNU_x86_64=123
+++ export PE_LIBSCI_GENCOMPS_GNU_x86_64
+++ PE_LIBSCI_GENCOMPS_INTEL_x86_64=20232
+++ export PE_LIBSCI_GENCOMPS_INTEL_x86_64
+++ PE_LIBSCI_GENCOMPS_NVHPC_x86_64=233
+++ export PE_LIBSCI_GENCOMPS_NVHPC_x86_64
+++ PE_LIBSCI_GENCOMPS_NVIDIA_x86_64=233
+++ export PE_LIBSCI_GENCOMPS_NVIDIA_x86_64
+++ PE_LIBSCI_MODULE_NAME=cray-libsci/24.07.0
+++ export PE_LIBSCI_MODULE_NAME
+++ PE_LIBSCI_OMP_REQUIRES=
+++ export PE_LIBSCI_OMP_REQUIRES
+++ PE_LIBSCI_OMP_REQUIRES_openmp=_mp
+++ export PE_LIBSCI_OMP_REQUIRES_openmp
+++ PE_LIBSCI_PKGCONFIG_LIBS=libsci_mpi:libsci
+++ export PE_LIBSCI_PKGCONFIG_LIBS
+++ PE_LIBSCI_PKGCONFIG_VARIABLES=PE_LIBSCI_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME
+++ export PE_LIBSCI_PKGCONFIG_VARIABLES
+++ PE_LIBSCI_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/@PRGENV@/@PE_LIBSCI_GENCOMPS@/x86_64/lib/pkgconfig
+++ export PE_LIBSCI_VOLATILE_PKGCONFIG_PATH
+++ PE_LIBSCI_VOLATILE_PRGENV='GNU CRAY CRAYCLANG INTEL AOCC NVIDIA NVHPC'
+++ export PE_LIBSCI_VOLATILE_PRGENV
+++ PE_MPICH_DEFAULT_FIXED_PRGENV=INTEL
+++ export PE_MPICH_DEFAULT_FIXED_PRGENV
+++ PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS=mpichf90
+++ export PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS
+++ PE_MPICH_DEFAULT_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_DEFAULT_GTL_DIR_amd_gfx906
+++ PE_MPICH_DEFAULT_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_DEFAULT_GTL_DIR_amd_gfx908
+++ PE_MPICH_DEFAULT_GTL_DIR_amd_gfx90a=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_DEFAULT_GTL_DIR_amd_gfx90a
+++ PE_MPICH_DEFAULT_GTL_DIR_amd_gfx940=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_DEFAULT_GTL_DIR_amd_gfx940
+++ PE_MPICH_DEFAULT_GTL_DIR_amd_gfx942=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_DEFAULT_GTL_DIR_amd_gfx942
+++ PE_MPICH_DEFAULT_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_DEFAULT_GTL_DIR_nvidia70
+++ PE_MPICH_DEFAULT_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_DEFAULT_GTL_DIR_nvidia80
+++ PE_MPICH_DEFAULT_GTL_DIR_nvidia90=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_DEFAULT_GTL_DIR_nvidia90
+++ PE_MPICH_DEFAULT_GTL_DIR_ponteVecchio=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_DEFAULT_GTL_DIR_ponteVecchio
+++ PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa
+++ export PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx906
+++ PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa
+++ export PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx908
+++ PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx90a=-lmpi_gtl_hsa
+++ export PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx90a
+++ PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx940=-lmpi_gtl_hsa
+++ export PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx940
+++ PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx942=-lmpi_gtl_hsa
+++ export PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx942
+++ PE_MPICH_DEFAULT_GTL_LIBS_nvidia70=-lmpi_gtl_cuda
+++ export PE_MPICH_DEFAULT_GTL_LIBS_nvidia70
+++ PE_MPICH_DEFAULT_GTL_LIBS_nvidia80=-lmpi_gtl_cuda
+++ export PE_MPICH_DEFAULT_GTL_LIBS_nvidia80
+++ PE_MPICH_DEFAULT_GTL_LIBS_nvidia90=-lmpi_gtl_cuda
+++ export PE_MPICH_DEFAULT_GTL_LIBS_nvidia90
+++ PE_MPICH_DEFAULT_GTL_LIBS_ponteVecchio=-lmpi_gtl_ze
+++ export PE_MPICH_DEFAULT_GTL_LIBS_ponteVecchio
+++ PE_MPICH_DEFAULT_PKGCONFIG_LIBS=mpich
+++ export PE_MPICH_DEFAULT_PKGCONFIG_LIBS
+++ PE_MPICH_DEFAULT_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@
+++ export PE_MPICH_DEFAULT_PKGCONFIG_VARIABLES
+++ PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.30/ofi/@PRGENV@/@PE_MPICH_DEFAULT_GENCOMPS@/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/gtl/lib/pkgconfig
+++ export PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PE_MPICH_DEFAULT_VOLATILE_PRGENV='AMD AOCC CRAY CRAYCLANG GNU NVIDIA'
+++ export PE_MPICH_DEFAULT_VOLATILE_PRGENV
+++ PE_MPICH_FIXED_PRGENV=INTEL
+++ export PE_MPICH_FIXED_PRGENV
+++ PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90
+++ export PE_MPICH_FORTRAN_PKGCONFIG_LIBS
+++ PE_MPICH_GENCOMPILERS_AMD=6.0
+++ export PE_MPICH_GENCOMPILERS_AMD
+++ PE_MPICH_GENCOMPILERS_AOCC=4.1
+++ export PE_MPICH_GENCOMPILERS_AOCC
+++ PE_MPICH_GENCOMPILERS_CRAY=17.0
+++ export PE_MPICH_GENCOMPILERS_CRAY
+++ PE_MPICH_GENCOMPILERS_CRAYCLANG=17.0
+++ export PE_MPICH_GENCOMPILERS_CRAYCLANG
+++ PE_MPICH_GENCOMPILERS_GNU=12.3
+++ export PE_MPICH_GENCOMPILERS_GNU
+++ PE_MPICH_GENCOMPILERS_NVIDIA=23.3
+++ export PE_MPICH_GENCOMPILERS_NVIDIA
+++ PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_amd_gfx906
+++ PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_amd_gfx908
+++ PE_MPICH_GTL_DIR_amd_gfx90a=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_amd_gfx90a
+++ PE_MPICH_GTL_DIR_amd_gfx940=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_amd_gfx940
+++ PE_MPICH_GTL_DIR_amd_gfx942=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_amd_gfx942
+++ PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_nvidia70
+++ PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_nvidia80
+++ PE_MPICH_GTL_DIR_nvidia90=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_nvidia90
+++ PE_MPICH_GTL_DIR_ponteVecchio=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_ponteVecchio
+++ PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa
+++ export PE_MPICH_GTL_LIBS_amd_gfx906
+++ PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa
+++ export PE_MPICH_GTL_LIBS_amd_gfx908
+++ PE_MPICH_GTL_LIBS_amd_gfx90a=-lmpi_gtl_hsa
+++ export PE_MPICH_GTL_LIBS_amd_gfx90a
+++ PE_MPICH_GTL_LIBS_amd_gfx940=-lmpi_gtl_hsa
+++ export PE_MPICH_GTL_LIBS_amd_gfx940
+++ PE_MPICH_GTL_LIBS_amd_gfx942=-lmpi_gtl_hsa
+++ export PE_MPICH_GTL_LIBS_amd_gfx942
+++ PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda
+++ export PE_MPICH_GTL_LIBS_nvidia70
+++ PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda
+++ export PE_MPICH_GTL_LIBS_nvidia80
+++ PE_MPICH_GTL_LIBS_nvidia90=-lmpi_gtl_cuda
+++ export PE_MPICH_GTL_LIBS_nvidia90
+++ PE_MPICH_GTL_LIBS_ponteVecchio=-lmpi_gtl_ze
+++ export PE_MPICH_GTL_LIBS_ponteVecchio
+++ PE_MPICH_MODULE_NAME=cray-mpich
+++ export PE_MPICH_MODULE_NAME
+++ PE_MPICH_PKGCONFIG_LIBS=mpich
+++ export PE_MPICH_PKGCONFIG_LIBS
+++ PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@
+++ export PE_MPICH_PKGCONFIG_VARIABLES
+++ PE_MPICH_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.30/ofi/@PRGENV@/@PE_MPICH_GENCOMPS@/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/gtl/lib/pkgconfig
+++ export PE_MPICH_VOLATILE_PKGCONFIG_PATH
+++ PE_MPICH_VOLATILE_PRGENV='AMD AOCC CRAY CRAYCLANG GNU NVIDIA'
+++ export PE_MPICH_VOLATILE_PRGENV
+++ PE_NETCDF_DEFAULT_FIXED_PRGENV='GNU CRAYCLANG INTEL AOCC NVIDIA'
+++ export PE_NETCDF_DEFAULT_FIXED_PRGENV
+++ PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5
+++ export PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS
+++ PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV='GNU CRAYCLANG INTEL AOCC NVIDIA'
+++ export PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV
+++ PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5_PARALLEL
+++ export PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS
+++ PE_NVHPC_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/NVHPC/23.3/x86_64/lib/pkgconfig
+++ export PE_NVHPC_DEFAULT_FIXED_PKGCONFIG_PATH
+++ PE_NVHPC_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/NVHPC/23.3/x86_64/lib/pkgconfig
+++ export PE_NVHPC_FIXED_PKGCONFIG_PATH
+++ PE_NVIDIA_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.9.0.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.14.3.1/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/hdf5/1.14.3.1/NVIDIA/23.3/lib/pkgconfig
+++ export PE_NVIDIA_DEFAULT_FIXED_PKGCONFIG_PATH
+++ PE_NVIDIA_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib/pkgconfig
+++ export PE_NVIDIA_FIXED_PKGCONFIG_PATH
+++ PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS=
+++ export PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS
+++ PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia=,-lcupti,-lcudart,-lcuda
+++ export PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia
+++ PE_PAPI_DEFAULT_ACCEL_LIBS=
+++ export PE_PAPI_DEFAULT_ACCEL_LIBS
+++ PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35=,-lcupti,-lcudart,-lcuda
+++ export PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35
+++ PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES='PE_PAPI_ACCEL_LIBS_@accelerator@ PE_PAPI_ACCEL_FAMILY_LIBS_@accelerator_family@'
+++ export PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES
+++ PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV='GNU CRAYCLANG INTEL AOCC NVIDIA'
+++ export PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV
+++ PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib
+++ export PE_PERFTOOLS_MPICH_LIBDIR
+++ PE_PKGCONFIG_DEFAULT_LIBS=mpich
+++ export PE_PKGCONFIG_DEFAULT_LIBS
+++ PE_PKGCONFIG_DEFAULT_PRODUCTS=PE_PARALLEL_NETCDF:PE_NETCDF_HDF5PARALLEL:PE_NETCDF:PE_MPICH:PE_LIBSCI:PE_HDF5_PARALLEL:PE_HDF5:PE_FFTW
+++ export PE_PKGCONFIG_DEFAULT_PRODUCTS
+++ PE_PKGCONFIG_LIBS=libsci_mpi:libsci:mpich:dsmml
+++ export PE_PKGCONFIG_LIBS
+++ PE_PKGCONFIG_PRODUCTS=PE_LIBSCI:PE_MPICH:PE_DSMML:PE_ATP
+++ export PE_PKGCONFIG_PRODUCTS
+++ PE_PKGCONFIG_PRODUCTS_DEFAULT=PE_PAPI
+++ export PE_PKGCONFIG_PRODUCTS_DEFAULT
+++ PE_PKG_CONFIG_PATH=/opt/cray/pe/valgrind4hpc/2.13.3/lib/pkgconfig:/opt/cray/pe/cti/2.18.4/lib/pkgconfig:/opt/cray/pe/atp/3.15.4/lib/pkgconfig
+++ export PE_PKG_CONFIG_PATH
+++ PE_PRODUCT_LIST=CRAY_LIBSCI:CRAYPE
+++ export PE_PRODUCT_LIST
+++ PE_SMA_DEFAULT_COMPFLAG=
+++ export PE_SMA_DEFAULT_COMPFLAG
+++ PE_SMA_DEFAULT_COMPFLAG_GNU=-fcray-pointer
+++ export PE_SMA_DEFAULT_COMPFLAG_GNU
+++ PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64=64
+++ export PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64
+++ PE_SMA_DEFAULT_DIR_PGI_DEFAULT64=64
+++ export PE_SMA_DEFAULT_DIR_PGI_DEFAULT64
+++ PE_SMA_DEFAULT_PKGCONFIG_VARIABLES=PE_SMA_COMPFLAG_@prgenv@
+++ export PE_SMA_DEFAULT_PKGCONFIG_VARIABLES
+++ PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/sma/11.7.2/ofi/sma@PE_SMA_DEFAULT_DIR_DEFAULT64@/lib64/pkgconfig
+++ export PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH
+++ PKGCONFIG_ENABLED=1
+++ export PKGCONFIG_ENABLED
+++ PKG_CONFIG_PATH=/opt/cray/libfabric/1.20.1/lib64/pkgconfig:/opt/cray/pe/craype/2.7.32/pkg-config:/scratch/lus/intel/oneapi/mkl/2024.2/lib/pkgconfig:/scratch/lus/intel/oneapi/compiler/2024.2/lib/pkgconfig:/opt/cray/pe/atp/3.15.4/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ PKG_CONFIG_PATH_DEFAULT=/opt/cray/pe/papi/7.1.0.2/lib64/pkgconfig
+++ export PKG_CONFIG_PATH_DEFAULT
+++ _LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/opt/cray/pe/modulefiles/cray-mpich/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0
+++ export _LMFILES_
+++ intel_already_loaded=0
+++ export intel_already_loaded
++ module load cray-netcdf/4.9.0.13
+++ /opt/cray/pe/modules/3.2.11.7/bin/modulecmd bash load cray-netcdf/4.9.0.13
++ eval CRAY_LD_LIBRARY_PATH=/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib ';export' 'CRAY_LD_LIBRARY_PATH;CRAY_NETCDF_DIR=/opt/cray/pe/netcdf/4.9.0.13' ';export' 'CRAY_NETCDF_DIR;CRAY_NETCDF_PREFIX=/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2' ';export' 'CRAY_NETCDF_PREFIX;CRAY_NETCDF_VERSION=4.9.0.13' ';export' 'CRAY_NETCDF_VERSION;CRAY_PE_MODULES=cray-netcdf:cray-libsci' ';export' 'CRAY_PE_MODULES;LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:craype-network-ofi:cray-mpich/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0:cray-netcdf/4.9.0.13' ';export' 'LOADEDMODULES;MANPATH=/opt/cray/pe/netcdf/4.9.0.13/share/man:/opt/cray/pe/libsci/24.07.0/share/man:/opt/cray/pe/mpich/8.1.30/ofi/man:/opt/cray/pe/mpich/8.1.30/man/mpich:/opt/cray/libfabric/1.20.1/share/man:/opt/cray/pe/dsmml/0.3.0/dsmml/man/:/opt/cray/pe/craype/2.7.32/man:/scratch/lus/intel/oneapi/compiler/2024.2/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/c3/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/cray/pe/man' ';export' 'MANPATH;NETCDF_DIR=/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2' ';export' 'NETCDF_DIR;PATH=/opt/cray/pe/netcdf/4.9.0.13/bin:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/scratch/lus/intel/oneapi/mkl/2024.2/bin/:/scratch/lus/intel/oneapi/compiler/2024.2/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/opt/cray/pe/bin' ';export' 'PATH;PE_AOCC_FIXED_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.9.0.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/AOCC/4.1/x86_64/lib/pkgconfig' ';export' 'PE_AOCC_FIXED_PKGCONFIG_PATH;PE_CRAYCLANG_FIXED_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.9.0.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/CRAYCLANG/17.0/x86_64/lib/pkgconfig' ';export' 'PE_CRAYCLANG_FIXED_PKGCONFIG_PATH;PE_CXX_PKGCONFIG_LIBS=netcdf-cxx4' ';export' 'PE_CXX_PKGCONFIG_LIBS;PE_FORTRAN_PKGCONFIG_LIBS=netcdf-fortran:mpichf90' ';export' 'PE_FORTRAN_PKGCONFIG_LIBS;PE_GNU_FIXED_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.9.0.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/GNU/12.3/x86_64/lib/pkgconfig' ';export' 'PE_GNU_FIXED_PKGCONFIG_PATH;PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib/pkgconfig' ';export' 'PE_INTEL_FIXED_PKGCONFIG_PATH;PE_NETCDF_BASEDIR=/opt/cray/pe/netcdf/4.9.0.13' ';export' 'PE_NETCDF_BASEDIR;PE_NETCDF_CXX_PKGCONFIG_LIBS=netcdf-cxx4' ';export' 'PE_NETCDF_CXX_PKGCONFIG_LIBS;PE_NETCDF_FIXED_PRGENV=GNU\' 'CRAYCLANG\' 'INTEL\' 'AOCC\' NVIDIA ';export' 'PE_NETCDF_FIXED_PRGENV;PE_NETCDF_FORTRAN_PKGCONFIG_LIBS=netcdf-fortran' ';export' 'PE_NETCDF_FORTRAN_PKGCONFIG_LIBS;PE_NETCDF_MODULE_NAME=cray-netcdf' ';export' 'PE_NETCDF_MODULE_NAME;PE_NETCDF_PKGCONFIG_LIBS=netcdf' ';export' 'PE_NETCDF_PKGCONFIG_LIBS;PE_NETCDF_REQUIRED_PRODUCTS=PE_HDF5' ';export' 'PE_NETCDF_REQUIRED_PRODUCTS;PE_NVIDIA_FIXED_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.9.0.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib/pkgconfig' ';export' 'PE_NVIDIA_FIXED_PKGCONFIG_PATH;PE_PKGCONFIG_LIBS=netcdf:libsci_mpi:libsci:mpich:dsmml' ';export' 'PE_PKGCONFIG_LIBS;PE_PKGCONFIG_PRODUCTS=PE_NETCDF:PE_LIBSCI:PE_MPICH:PE_DSMML:PE_ATP' ';export' 'PE_PKGCONFIG_PRODUCTS;_LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/opt/cray/pe/modulefiles/cray-mpich/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0:/opt/cray/pe/modulefiles/cray-netcdf/4.9.0.13' ';export' '_LMFILES_;'
+++ CRAY_LD_LIBRARY_PATH=/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib
+++ export CRAY_LD_LIBRARY_PATH
+++ CRAY_NETCDF_DIR=/opt/cray/pe/netcdf/4.9.0.13
+++ export CRAY_NETCDF_DIR
+++ CRAY_NETCDF_PREFIX=/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2
+++ export CRAY_NETCDF_PREFIX
+++ CRAY_NETCDF_VERSION=4.9.0.13
+++ export CRAY_NETCDF_VERSION
+++ CRAY_PE_MODULES=cray-netcdf:cray-libsci
+++ export CRAY_PE_MODULES
+++ LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:craype-network-ofi:cray-mpich/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0:cray-netcdf/4.9.0.13
+++ export LOADEDMODULES
+++ MANPATH=/opt/cray/pe/netcdf/4.9.0.13/share/man:/opt/cray/pe/libsci/24.07.0/share/man:/opt/cray/pe/mpich/8.1.30/ofi/man:/opt/cray/pe/mpich/8.1.30/man/mpich:/opt/cray/libfabric/1.20.1/share/man:/opt/cray/pe/dsmml/0.3.0/dsmml/man/:/opt/cray/pe/craype/2.7.32/man:/scratch/lus/intel/oneapi/compiler/2024.2/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/c3/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/cray/pe/man
+++ export MANPATH
+++ NETCDF_DIR=/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2
+++ export NETCDF_DIR
+++ PATH=/opt/cray/pe/netcdf/4.9.0.13/bin:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/scratch/lus/intel/oneapi/mkl/2024.2/bin/:/scratch/lus/intel/oneapi/compiler/2024.2/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/opt/cray/pe/bin
+++ export PATH
+++ PE_AOCC_FIXED_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.9.0.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/AOCC/4.1/x86_64/lib/pkgconfig
+++ export PE_AOCC_FIXED_PKGCONFIG_PATH
+++ PE_CRAYCLANG_FIXED_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.9.0.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/CRAYCLANG/17.0/x86_64/lib/pkgconfig
+++ export PE_CRAYCLANG_FIXED_PKGCONFIG_PATH
+++ PE_CXX_PKGCONFIG_LIBS=netcdf-cxx4
+++ export PE_CXX_PKGCONFIG_LIBS
+++ PE_FORTRAN_PKGCONFIG_LIBS=netcdf-fortran:mpichf90
+++ export PE_FORTRAN_PKGCONFIG_LIBS
+++ PE_GNU_FIXED_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.9.0.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/GNU/12.3/x86_64/lib/pkgconfig
+++ export PE_GNU_FIXED_PKGCONFIG_PATH
+++ PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib/pkgconfig
+++ export PE_INTEL_FIXED_PKGCONFIG_PATH
+++ PE_NETCDF_BASEDIR=/opt/cray/pe/netcdf/4.9.0.13
+++ export PE_NETCDF_BASEDIR
+++ PE_NETCDF_CXX_PKGCONFIG_LIBS=netcdf-cxx4
+++ export PE_NETCDF_CXX_PKGCONFIG_LIBS
+++ PE_NETCDF_FIXED_PRGENV='GNU CRAYCLANG INTEL AOCC NVIDIA'
+++ export PE_NETCDF_FIXED_PRGENV
+++ PE_NETCDF_FORTRAN_PKGCONFIG_LIBS=netcdf-fortran
+++ export PE_NETCDF_FORTRAN_PKGCONFIG_LIBS
+++ PE_NETCDF_MODULE_NAME=cray-netcdf
+++ export PE_NETCDF_MODULE_NAME
+++ PE_NETCDF_PKGCONFIG_LIBS=netcdf
+++ export PE_NETCDF_PKGCONFIG_LIBS
+++ PE_NETCDF_REQUIRED_PRODUCTS=PE_HDF5
+++ export PE_NETCDF_REQUIRED_PRODUCTS
+++ PE_NVIDIA_FIXED_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.9.0.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib/pkgconfig
+++ export PE_NVIDIA_FIXED_PKGCONFIG_PATH
+++ PE_PKGCONFIG_LIBS=netcdf:libsci_mpi:libsci:mpich:dsmml
+++ export PE_PKGCONFIG_LIBS
+++ PE_PKGCONFIG_PRODUCTS=PE_NETCDF:PE_LIBSCI:PE_MPICH:PE_DSMML:PE_ATP
+++ export PE_PKGCONFIG_PRODUCTS
+++ _LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/opt/cray/pe/modulefiles/cray-mpich/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0:/opt/cray/pe/modulefiles/cray-netcdf/4.9.0.13
+++ export _LMFILES_
++ module load cray-parallel-netcdf/1.12.3.13
+++ /opt/cray/pe/modules/3.2.11.7/bin/modulecmd bash load cray-parallel-netcdf/1.12.3.13
++ eval CRAY_LD_LIBRARY_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2/lib:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib ';export' 'CRAY_LD_LIBRARY_PATH;CRAY_PARALLEL_NETCDF_DIR=/opt/cray/pe/parallel-netcdf/1.12.3.13' ';export' 'CRAY_PARALLEL_NETCDF_DIR;CRAY_PARALLEL_NETCDF_PREFIX=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2' ';export' 'CRAY_PARALLEL_NETCDF_PREFIX;CRAY_PARALLEL_NETCDF_VERSION=1.12.3.13' ';export' 'CRAY_PARALLEL_NETCDF_VERSION;LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:craype-network-ofi:cray-mpich/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0:cray-netcdf/4.9.0.13:cray-parallel-netcdf/1.12.3.13' ';export' 'LOADEDMODULES;MANPATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/share/man:/opt/cray/pe/netcdf/4.9.0.13/share/man:/opt/cray/pe/libsci/24.07.0/share/man:/opt/cray/pe/mpich/8.1.30/ofi/man:/opt/cray/pe/mpich/8.1.30/man/mpich:/opt/cray/libfabric/1.20.1/share/man:/opt/cray/pe/dsmml/0.3.0/dsmml/man/:/opt/cray/pe/craype/2.7.32/man:/scratch/lus/intel/oneapi/compiler/2024.2/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/c3/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/cray/pe/man' ';export' 'MANPATH;PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/bin:/opt/cray/pe/netcdf/4.9.0.13/bin:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/scratch/lus/intel/oneapi/mkl/2024.2/bin/:/scratch/lus/intel/oneapi/compiler/2024.2/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/opt/cray/pe/bin' ';export' 'PATH;PE_AOCC_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/AOCC/4.1/x86_64/lib/pkgconfig' ';export' 'PE_AOCC_FIXED_PKGCONFIG_PATH;PE_CRAYCLANG_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/CRAYCLANG/17.0/x86_64/lib/pkgconfig' ';export' 'PE_CRAYCLANG_FIXED_PKGCONFIG_PATH;PE_GNU_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/GNU/12.3/x86_64/lib/pkgconfig' ';export' 'PE_GNU_FIXED_PKGCONFIG_PATH;PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib/pkgconfig' ';export' 'PE_INTEL_FIXED_PKGCONFIG_PATH;PE_NVIDIA_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib/pkgconfig' ';export' 'PE_NVIDIA_FIXED_PKGCONFIG_PATH;PE_PARALLEL_NETCDF_DIR=/opt/cray/pe/parallel-netcdf/1.12.3.13' ';export' 'PE_PARALLEL_NETCDF_DIR;PE_PARALLEL_NETCDF_FIXED_PRGENV=GNU\' 'CRAYCLANG\' 'INTEL\' 'AOCC\' NVIDIA ';export' 'PE_PARALLEL_NETCDF_FIXED_PRGENV;PE_PARALLEL_NETCDF_MODULE_NAME=cray-parallel-netcdf' ';export' 'PE_PARALLEL_NETCDF_MODULE_NAME;PE_PKGCONFIG_LIBS=pnetcdf:netcdf:libsci_mpi:libsci:mpich:dsmml' ';export' 'PE_PKGCONFIG_LIBS;PE_PKGCONFIG_PRODUCTS=PE_PARALLEL_NETCDF:PE_NETCDF:PE_LIBSCI:PE_MPICH:PE_DSMML:PE_ATP' ';export' 'PE_PKGCONFIG_PRODUCTS;PNETCDF_DIR=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2' ';export' 'PNETCDF_DIR;_LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/opt/cray/pe/modulefiles/cray-mpich/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0:/opt/cray/pe/modulefiles/cray-netcdf/4.9.0.13:/opt/cray/pe/modulefiles/cray-parallel-netcdf/1.12.3.13' ';export' '_LMFILES_;'
+++ CRAY_LD_LIBRARY_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2/lib:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib
+++ export CRAY_LD_LIBRARY_PATH
+++ CRAY_PARALLEL_NETCDF_DIR=/opt/cray/pe/parallel-netcdf/1.12.3.13
+++ export CRAY_PARALLEL_NETCDF_DIR
+++ CRAY_PARALLEL_NETCDF_PREFIX=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2
+++ export CRAY_PARALLEL_NETCDF_PREFIX
+++ CRAY_PARALLEL_NETCDF_VERSION=1.12.3.13
+++ export CRAY_PARALLEL_NETCDF_VERSION
+++ LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:craype-network-ofi:cray-mpich/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0:cray-netcdf/4.9.0.13:cray-parallel-netcdf/1.12.3.13
+++ export LOADEDMODULES
+++ MANPATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/share/man:/opt/cray/pe/netcdf/4.9.0.13/share/man:/opt/cray/pe/libsci/24.07.0/share/man:/opt/cray/pe/mpich/8.1.30/ofi/man:/opt/cray/pe/mpich/8.1.30/man/mpich:/opt/cray/libfabric/1.20.1/share/man:/opt/cray/pe/dsmml/0.3.0/dsmml/man/:/opt/cray/pe/craype/2.7.32/man:/scratch/lus/intel/oneapi/compiler/2024.2/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/c3/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/cray/pe/man
+++ export MANPATH
+++ PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/bin:/opt/cray/pe/netcdf/4.9.0.13/bin:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/scratch/lus/intel/oneapi/mkl/2024.2/bin/:/scratch/lus/intel/oneapi/compiler/2024.2/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/opt/cray/pe/bin
+++ export PATH
+++ PE_AOCC_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/AOCC/4.1/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/AOCC/4.1/x86_64/lib/pkgconfig
+++ export PE_AOCC_FIXED_PKGCONFIG_PATH
+++ PE_CRAYCLANG_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/CRAYCLANG/18.0/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/CRAYCLANG/17.0/x86_64/lib/pkgconfig
+++ export PE_CRAYCLANG_FIXED_PKGCONFIG_PATH
+++ PE_GNU_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/GNU/12.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/GNU/12.3/x86_64/lib/pkgconfig
+++ export PE_GNU_FIXED_PKGCONFIG_PATH
+++ PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/lib/pkgconfig
+++ export PE_INTEL_FIXED_PKGCONFIG_PATH
+++ PE_NVIDIA_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/NVIDIA/23.3/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib/pkgconfig
+++ export PE_NVIDIA_FIXED_PKGCONFIG_PATH
+++ PE_PARALLEL_NETCDF_DIR=/opt/cray/pe/parallel-netcdf/1.12.3.13
+++ export PE_PARALLEL_NETCDF_DIR
+++ PE_PARALLEL_NETCDF_FIXED_PRGENV='GNU CRAYCLANG INTEL AOCC NVIDIA'
+++ export PE_PARALLEL_NETCDF_FIXED_PRGENV
+++ PE_PARALLEL_NETCDF_MODULE_NAME=cray-parallel-netcdf
+++ export PE_PARALLEL_NETCDF_MODULE_NAME
+++ PE_PKGCONFIG_LIBS=pnetcdf:netcdf:libsci_mpi:libsci:mpich:dsmml
+++ export PE_PKGCONFIG_LIBS
+++ PE_PKGCONFIG_PRODUCTS=PE_PARALLEL_NETCDF:PE_NETCDF:PE_LIBSCI:PE_MPICH:PE_DSMML:PE_ATP
+++ export PE_PKGCONFIG_PRODUCTS
+++ PNETCDF_DIR=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2
+++ export PNETCDF_DIR
+++ _LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/opt/cray/pe/modulefiles/cray-mpich/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0:/opt/cray/pe/modulefiles/cray-netcdf/4.9.0.13:/opt/cray/pe/modulefiles/cray-parallel-netcdf/1.12.3.13
+++ export _LMFILES_
++ module load craype-x86-rome
+++ /opt/cray/pe/modules/3.2.11.7/bin/modulecmd bash load craype-x86-rome
++ eval CRAY_CPU_TARGET=x86-rome ';export' 'CRAY_CPU_TARGET;LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:craype-network-ofi:cray-mpich/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0:cray-netcdf/4.9.0.13:cray-parallel-netcdf/1.12.3.13:craype-x86-rome' ';export' 'LOADEDMODULES;PE_PRODUCT_LIST=CRAYPE_X86_ROME:CRAY_LIBSCI:CRAYPE' ';export' 'PE_PRODUCT_LIST;_LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/opt/cray/pe/modulefiles/cray-mpich/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0:/opt/cray/pe/modulefiles/cray-netcdf/4.9.0.13:/opt/cray/pe/modulefiles/cray-parallel-netcdf/1.12.3.13:/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome' ';export' '_LMFILES_;'
+++ CRAY_CPU_TARGET=x86-rome
+++ export CRAY_CPU_TARGET
+++ LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:craype-network-ofi:cray-mpich/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0:cray-netcdf/4.9.0.13:cray-parallel-netcdf/1.12.3.13:craype-x86-rome
+++ export LOADEDMODULES
+++ PE_PRODUCT_LIST=CRAYPE_X86_ROME:CRAY_LIBSCI:CRAYPE
+++ export PE_PRODUCT_LIST
+++ _LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/opt/cray/pe/modulefiles/cray-mpich/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0:/opt/cray/pe/modulefiles/cray-netcdf/4.9.0.13:/opt/cray/pe/modulefiles/cray-parallel-netcdf/1.12.3.13:/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome
+++ export _LMFILES_
++ [[ yes == \y\e\s ]]
++ module swap craype-network-ofi craype-network-ucx
+++ /opt/cray/pe/modules/3.2.11.7/bin/modulecmd bash swap craype-network-ofi craype-network-ucx
++ eval CRAYPE_NETWORK_TARGET=ucx ';export' 'CRAYPE_NETWORK_TARGET;LD_LIBRARY_PATH=/opt/cray/pe/ucx/1.14.0/ucx/lib:/opt/cray/libfabric/1.20.1/lib64:/scratch/lus/intel/oneapi/mkl/2024.2/lib:/scratch/lus/intel/oneapi/compiler/2024.2/opt/compiler/lib:/scratch/lus/intel/oneapi/compiler/2024.2/lib' ';export' 'LD_LIBRARY_PATH;LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:cray-ucx/1.14.0:craype-network-ucx:cray-mpich/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0:cray-netcdf/4.9.0.13:cray-parallel-netcdf/1.12.3.13:craype-x86-rome' ';export' 'LOADEDMODULES;PATH=/opt/cray/pe/ucx/1.14.0/ucx/bin:/opt/cray/pe/parallel-netcdf/1.12.3.13/bin:/opt/cray/pe/netcdf/4.9.0.13/bin:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/scratch/lus/intel/oneapi/mkl/2024.2/bin/:/scratch/lus/intel/oneapi/compiler/2024.2/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/opt/cray/pe/bin' ';export' 'PATH;PKG_CONFIG_PATH=/opt/cray/pe/ucx/1.14.0/ucx/lib/pkgconfig:/opt/cray/libfabric/1.20.1/lib64/pkgconfig:/opt/cray/pe/craype/2.7.32/pkg-config:/scratch/lus/intel/oneapi/mkl/2024.2/lib/pkgconfig:/scratch/lus/intel/oneapi/compiler/2024.2/lib/pkgconfig:/opt/cray/pe/atp/3.15.4/lib/pkgconfig' ';export' 'PKG_CONFIG_PATH;_LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/modulefiles/cray-ucx/1.14.0:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ucx:/opt/cray/pe/modulefiles/cray-mpich/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0:/opt/cray/pe/modulefiles/cray-netcdf/4.9.0.13:/opt/cray/pe/modulefiles/cray-parallel-netcdf/1.12.3.13:/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome' ';export' '_LMFILES_;'
+++ CRAYPE_NETWORK_TARGET=ucx
+++ export CRAYPE_NETWORK_TARGET
+++ LD_LIBRARY_PATH=/opt/cray/pe/ucx/1.14.0/ucx/lib:/opt/cray/libfabric/1.20.1/lib64:/scratch/lus/intel/oneapi/mkl/2024.2/lib:/scratch/lus/intel/oneapi/compiler/2024.2/opt/compiler/lib:/scratch/lus/intel/oneapi/compiler/2024.2/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:cray-ucx/1.14.0:craype-network-ucx:cray-mpich/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0:cray-netcdf/4.9.0.13:cray-parallel-netcdf/1.12.3.13:craype-x86-rome
+++ export LOADEDMODULES
+++ PATH=/opt/cray/pe/ucx/1.14.0/ucx/bin:/opt/cray/pe/parallel-netcdf/1.12.3.13/bin:/opt/cray/pe/netcdf/4.9.0.13/bin:/opt/cray/pe/mpich/8.1.30/ofi/intel/2022.1/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/scratch/lus/intel/oneapi/mkl/2024.2/bin/:/scratch/lus/intel/oneapi/compiler/2024.2/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/opt/cray/pe/bin
+++ export PATH
+++ PKG_CONFIG_PATH=/opt/cray/pe/ucx/1.14.0/ucx/lib/pkgconfig:/opt/cray/libfabric/1.20.1/lib64/pkgconfig:/opt/cray/pe/craype/2.7.32/pkg-config:/scratch/lus/intel/oneapi/mkl/2024.2/lib/pkgconfig:/scratch/lus/intel/oneapi/compiler/2024.2/lib/pkgconfig:/opt/cray/pe/atp/3.15.4/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ _LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/modulefiles/cray-ucx/1.14.0:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ucx:/opt/cray/pe/modulefiles/cray-mpich/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0:/opt/cray/pe/modulefiles/cray-netcdf/4.9.0.13:/opt/cray/pe/modulefiles/cray-parallel-netcdf/1.12.3.13:/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome
+++ export _LMFILES_
++ module swap cray-mpich cray-mpich-ucx
+++ /opt/cray/pe/modules/3.2.11.7/bin/modulecmd bash swap cray-mpich cray-mpich-ucx
++ eval CRAY_LD_LIBRARY_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2/lib:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib ';export' 'CRAY_LD_LIBRARY_PATH;CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.30/ucx' ';export' 'CRAY_MPICH_BASEDIR;CRAY_MPICH_DIR=/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1' ';export' 'CRAY_MPICH_DIR;CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1' ';export' 'CRAY_MPICH_PREFIX;CRAY_MPICH_VER=8.1.30' ';export' 'CRAY_MPICH_VER;CRAY_MPICH_VERSION=8.1.30' ';export' 'CRAY_MPICH_VERSION;LD_LIBRARY_PATH=/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1/lib:/opt/cray/pe/ucx/1.14.0/ucx/lib:/opt/cray/libfabric/1.20.1/lib64:/scratch/lus/intel/oneapi/mkl/2024.2/lib:/scratch/lus/intel/oneapi/compiler/2024.2/opt/compiler/lib:/scratch/lus/intel/oneapi/compiler/2024.2/lib' ';export' 'LD_LIBRARY_PATH;LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:cray-ucx/1.14.0:craype-network-ucx:cray-mpich-ucx/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0:cray-netcdf/4.9.0.13:cray-parallel-netcdf/1.12.3.13:craype-x86-rome' ';export' 'LOADEDMODULES;MANPATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/share/man:/opt/cray/pe/netcdf/4.9.0.13/share/man:/opt/cray/pe/libsci/24.07.0/share/man:/opt/cray/pe/mpich/8.1.30/ucx/man:/opt/cray/pe/mpich/8.1.30/man/mpich:/opt/cray/libfabric/1.20.1/share/man:/opt/cray/pe/dsmml/0.3.0/dsmml/man/:/opt/cray/pe/craype/2.7.32/man:/scratch/lus/intel/oneapi/compiler/2024.2/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/c3/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/cray/pe/man' ';export' 'MANPATH;MPICH_DIR=/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1' ';export' 'MPICH_DIR;PATH=/opt/cray/pe/ucx/1.14.0/ucx/bin:/opt/cray/pe/parallel-netcdf/1.12.3.13/bin:/opt/cray/pe/netcdf/4.9.0.13/bin:/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/scratch/lus/intel/oneapi/mkl/2024.2/bin/:/scratch/lus/intel/oneapi/compiler/2024.2/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/opt/cray/pe/bin' ';export' 'PATH;PE_FORTRAN_PKGCONFIG_LIBS=netcdf-fortran:mpichf90' ';export' 'PE_FORTRAN_PKGCONFIG_LIBS;PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1/lib/pkgconfig' ';export' 'PE_INTEL_FIXED_PKGCONFIG_PATH;PE_MPICH_FIXED_PRGENV=INTEL' ';export' 'PE_MPICH_FIXED_PRGENV;PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90' ';export' 'PE_MPICH_FORTRAN_PKGCONFIG_LIBS;PE_MPICH_GENCOMPILERS_AMD=6.0' ';export' 'PE_MPICH_GENCOMPILERS_AMD;PE_MPICH_GENCOMPILERS_AOCC=4.1' ';export' 'PE_MPICH_GENCOMPILERS_AOCC;PE_MPICH_GENCOMPILERS_CRAY=17.0' ';export' 'PE_MPICH_GENCOMPILERS_CRAY;PE_MPICH_GENCOMPILERS_CRAYCLANG=17.0' ';export' 'PE_MPICH_GENCOMPILERS_CRAYCLANG;PE_MPICH_GENCOMPILERS_GNU=12.3' ';export' 'PE_MPICH_GENCOMPILERS_GNU;PE_MPICH_GENCOMPILERS_NVIDIA=23.3' ';export' 'PE_MPICH_GENCOMPILERS_NVIDIA;PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_amd_gfx906;PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_amd_gfx908;PE_MPICH_GTL_DIR_amd_gfx90a=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_amd_gfx90a;PE_MPICH_GTL_DIR_amd_gfx940=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_amd_gfx940;PE_MPICH_GTL_DIR_amd_gfx942=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_amd_gfx942;PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_nvidia70;PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_nvidia80;PE_MPICH_GTL_DIR_nvidia90=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_nvidia90;PE_MPICH_GTL_DIR_ponteVecchio=-L/opt/cray/pe/mpich/8.1.30/gtl/lib' ';export' 'PE_MPICH_GTL_DIR_ponteVecchio;PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa' ';export' 'PE_MPICH_GTL_LIBS_amd_gfx906;PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa' ';export' 'PE_MPICH_GTL_LIBS_amd_gfx908;PE_MPICH_GTL_LIBS_amd_gfx90a=-lmpi_gtl_hsa' ';export' 'PE_MPICH_GTL_LIBS_amd_gfx90a;PE_MPICH_GTL_LIBS_amd_gfx940=-lmpi_gtl_hsa' ';export' 'PE_MPICH_GTL_LIBS_amd_gfx940;PE_MPICH_GTL_LIBS_amd_gfx942=-lmpi_gtl_hsa' ';export' 'PE_MPICH_GTL_LIBS_amd_gfx942;PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda' ';export' 'PE_MPICH_GTL_LIBS_nvidia70;PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda' ';export' 'PE_MPICH_GTL_LIBS_nvidia80;PE_MPICH_GTL_LIBS_nvidia90=-lmpi_gtl_cuda' ';export' 'PE_MPICH_GTL_LIBS_nvidia90;PE_MPICH_GTL_LIBS_ponteVecchio=-lmpi_gtl_ze' ';export' 'PE_MPICH_GTL_LIBS_ponteVecchio;PE_MPICH_MODULE_NAME=cray-mpich' ';export' 'PE_MPICH_MODULE_NAME;PE_MPICH_PKGCONFIG_LIBS=mpich' ';export' 'PE_MPICH_PKGCONFIG_LIBS;PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@' ';export' 'PE_MPICH_PKGCONFIG_VARIABLES;PE_MPICH_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.30/ucx/@PRGENV@/@PE_MPICH_GENCOMPS@/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/gtl/lib/pkgconfig' ';export' 'PE_MPICH_VOLATILE_PKGCONFIG_PATH;PE_MPICH_VOLATILE_PRGENV=AMD\' 'AOCC\' 'CRAY\' 'CRAYCLANG\' 'GNU\' NVIDIA ';export' 'PE_MPICH_VOLATILE_PRGENV;PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1/lib' ';export' 'PE_PERFTOOLS_MPICH_LIBDIR;PE_PKGCONFIG_LIBS=pnetcdf:netcdf:libsci_mpi:libsci:mpich:dsmml' ';export' 'PE_PKGCONFIG_LIBS;PE_PKGCONFIG_PRODUCTS=PE_PARALLEL_NETCDF:PE_NETCDF:PE_LIBSCI:PE_MPICH:PE_DSMML:PE_ATP' ';export' 'PE_PKGCONFIG_PRODUCTS;UCX_LOG_LEVEL=error' ';export' 'UCX_LOG_LEVEL;_LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/modulefiles/cray-ucx/1.14.0:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ucx:/opt/cray/pe/modulefiles/cray-mpich-ucx/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0:/opt/cray/pe/modulefiles/cray-netcdf/4.9.0.13:/opt/cray/pe/modulefiles/cray-parallel-netcdf/1.12.3.13:/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome' ';export' '_LMFILES_;'
+++ CRAY_LD_LIBRARY_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2/lib:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib:/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1/lib:/opt/cray/pe/mpich/8.1.30/gtl/lib:/opt/cray/pe/dsmml/0.3.0/dsmml/lib
+++ export CRAY_LD_LIBRARY_PATH
+++ CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.30/ucx
+++ export CRAY_MPICH_BASEDIR
+++ CRAY_MPICH_DIR=/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1
+++ export CRAY_MPICH_DIR
+++ CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1
+++ export CRAY_MPICH_PREFIX
+++ CRAY_MPICH_VER=8.1.30
+++ export CRAY_MPICH_VER
+++ CRAY_MPICH_VERSION=8.1.30
+++ export CRAY_MPICH_VERSION
+++ LD_LIBRARY_PATH=/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1/lib:/opt/cray/pe/ucx/1.14.0/ucx/lib:/opt/cray/libfabric/1.20.1/lib64:/scratch/lus/intel/oneapi/mkl/2024.2/lib:/scratch/lus/intel/oneapi/compiler/2024.2/opt/compiler/lib:/scratch/lus/intel/oneapi/compiler/2024.2/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=intel/2024.2:craype/2.7.32:cray-dsmml/0.3.0:libfabric/1.20.1:cray-ucx/1.14.0:craype-network-ucx:cray-mpich-ucx/8.1.30:cray-libsci/24.07.0:PrgEnv-intel/8.5.0:cray-netcdf/4.9.0.13:cray-parallel-netcdf/1.12.3.13:craype-x86-rome
+++ export LOADEDMODULES
+++ MANPATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/share/man:/opt/cray/pe/netcdf/4.9.0.13/share/man:/opt/cray/pe/libsci/24.07.0/share/man:/opt/cray/pe/mpich/8.1.30/ucx/man:/opt/cray/pe/mpich/8.1.30/man/mpich:/opt/cray/libfabric/1.20.1/share/man:/opt/cray/pe/dsmml/0.3.0/dsmml/man/:/opt/cray/pe/craype/2.7.32/man:/scratch/lus/intel/oneapi/compiler/2024.2/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/cray/pe/modules/3.2.11.7/share/man:/opt/c3/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/scratch/lus/dev/man:/opt/cray/pe/man
+++ export MANPATH
+++ MPICH_DIR=/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1
+++ export MPICH_DIR
+++ PATH=/opt/cray/pe/ucx/1.14.0/ucx/bin:/opt/cray/pe/parallel-netcdf/1.12.3.13/bin:/opt/cray/pe/netcdf/4.9.0.13/bin:/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/scratch/lus/intel/oneapi/mkl/2024.2/bin/:/scratch/lus/intel/oneapi/compiler/2024.2/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/scratch/lus/dev/paraview/bin:/scratch/lus/dev/bin:/scratch/lus/dev/bin:/scratch/lus/arw/.local/bin:/scratch/lus/dev/bin:/scratch/lus/arw/model/bin:.:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/bin:/bin:/usr/X11R6/bin:/opt/c3/bin:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/usr/lib/mit/bin:/sbin:/bin:/sbin:/usr/sbin:/usr/bin:/opt/opengrads:/scratch/lus/dev/opengrads:/scratch/lus/dev/bin:/scratch/lus/arw/model/src/iodaconv/bin:/scratch/lus/arw/model/src/ioda/bin:/scratch/lus/arw/model/src/jedi/bin:/scratch/lus/dev/ncl/bin:/scratch/lus/dev/bin:/scratch/lus/dev/sbin:/pe:/opt/cray/pe/bin
+++ export PATH
+++ PE_FORTRAN_PKGCONFIG_LIBS=netcdf-fortran:mpichf90
+++ export PE_FORTRAN_PKGCONFIG_LIBS
+++ PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.3.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/netcdf/4.9.0.13/INTEL/2023.2/lib/pkgconfig:/opt/cray/pe/libsci/24.07.0/INTEL/2023.2/x86_64/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1/lib/pkgconfig
+++ export PE_INTEL_FIXED_PKGCONFIG_PATH
+++ PE_MPICH_FIXED_PRGENV=INTEL
+++ export PE_MPICH_FIXED_PRGENV
+++ PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90
+++ export PE_MPICH_FORTRAN_PKGCONFIG_LIBS
+++ PE_MPICH_GENCOMPILERS_AMD=6.0
+++ export PE_MPICH_GENCOMPILERS_AMD
+++ PE_MPICH_GENCOMPILERS_AOCC=4.1
+++ export PE_MPICH_GENCOMPILERS_AOCC
+++ PE_MPICH_GENCOMPILERS_CRAY=17.0
+++ export PE_MPICH_GENCOMPILERS_CRAY
+++ PE_MPICH_GENCOMPILERS_CRAYCLANG=17.0
+++ export PE_MPICH_GENCOMPILERS_CRAYCLANG
+++ PE_MPICH_GENCOMPILERS_GNU=12.3
+++ export PE_MPICH_GENCOMPILERS_GNU
+++ PE_MPICH_GENCOMPILERS_NVIDIA=23.3
+++ export PE_MPICH_GENCOMPILERS_NVIDIA
+++ PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_amd_gfx906
+++ PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_amd_gfx908
+++ PE_MPICH_GTL_DIR_amd_gfx90a=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_amd_gfx90a
+++ PE_MPICH_GTL_DIR_amd_gfx940=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_amd_gfx940
+++ PE_MPICH_GTL_DIR_amd_gfx942=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_amd_gfx942
+++ PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_nvidia70
+++ PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_nvidia80
+++ PE_MPICH_GTL_DIR_nvidia90=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_nvidia90
+++ PE_MPICH_GTL_DIR_ponteVecchio=-L/opt/cray/pe/mpich/8.1.30/gtl/lib
+++ export PE_MPICH_GTL_DIR_ponteVecchio
+++ PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa
+++ export PE_MPICH_GTL_LIBS_amd_gfx906
+++ PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa
+++ export PE_MPICH_GTL_LIBS_amd_gfx908
+++ PE_MPICH_GTL_LIBS_amd_gfx90a=-lmpi_gtl_hsa
+++ export PE_MPICH_GTL_LIBS_amd_gfx90a
+++ PE_MPICH_GTL_LIBS_amd_gfx940=-lmpi_gtl_hsa
+++ export PE_MPICH_GTL_LIBS_amd_gfx940
+++ PE_MPICH_GTL_LIBS_amd_gfx942=-lmpi_gtl_hsa
+++ export PE_MPICH_GTL_LIBS_amd_gfx942
+++ PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda
+++ export PE_MPICH_GTL_LIBS_nvidia70
+++ PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda
+++ export PE_MPICH_GTL_LIBS_nvidia80
+++ PE_MPICH_GTL_LIBS_nvidia90=-lmpi_gtl_cuda
+++ export PE_MPICH_GTL_LIBS_nvidia90
+++ PE_MPICH_GTL_LIBS_ponteVecchio=-lmpi_gtl_ze
+++ export PE_MPICH_GTL_LIBS_ponteVecchio
+++ PE_MPICH_MODULE_NAME=cray-mpich
+++ export PE_MPICH_MODULE_NAME
+++ PE_MPICH_PKGCONFIG_LIBS=mpich
+++ export PE_MPICH_PKGCONFIG_LIBS
+++ PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@
+++ export PE_MPICH_PKGCONFIG_VARIABLES
+++ PE_MPICH_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.30/ucx/@PRGENV@/@PE_MPICH_GENCOMPS@/lib/pkgconfig:/opt/cray/pe/mpich/8.1.30/gtl/lib/pkgconfig
+++ export PE_MPICH_VOLATILE_PKGCONFIG_PATH
+++ PE_MPICH_VOLATILE_PRGENV='AMD AOCC CRAY CRAYCLANG GNU NVIDIA'
+++ export PE_MPICH_VOLATILE_PRGENV
+++ PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.30/ucx/intel/2022.1/lib
+++ export PE_PERFTOOLS_MPICH_LIBDIR
+++ PE_PKGCONFIG_LIBS=pnetcdf:netcdf:libsci_mpi:libsci:mpich:dsmml
+++ export PE_PKGCONFIG_LIBS
+++ PE_PKGCONFIG_PRODUCTS=PE_PARALLEL_NETCDF:PE_NETCDF:PE_LIBSCI:PE_MPICH:PE_DSMML:PE_ATP
+++ export PE_PKGCONFIG_PRODUCTS
+++ UCX_LOG_LEVEL=error
+++ export UCX_LOG_LEVEL
+++ _LMFILES_=/scratch/lus/modulefiles/intel/2024.2:/opt/cray/pe/modulefiles/craype/2.7.32:/opt/cray/pe/modulefiles/cray-dsmml/0.3.0:/opt/cray/modulefiles/libfabric/1.20.1:/opt/cray/pe/modulefiles/cray-ucx/1.14.0:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ucx:/opt/cray/pe/modulefiles/cray-mpich-ucx/8.1.30:/opt/cray/pe/modulefiles/cray-libsci/24.07.0:/opt/cray/pe/modulefiles/PrgEnv-intel/8.5.0:/opt/cray/pe/modulefiles/cray-netcdf/4.9.0.13:/opt/cray/pe/modulefiles/cray-parallel-netcdf/1.12.3.13:/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome
+++ export _LMFILES_
++ export MPAS2WRF=/scratch/lus/arw/model/src/util/convert.intel/metgrid/src/metgrid.exe
++ MPAS2WRF=/scratch/lus/arw/model/src/util/convert.intel/metgrid/src/metgrid.exe
++ export EXE=/scratch/lus/arw/model/src/util/convert.intel/metgrid/src/metgrid.exe
++ EXE=/scratch/lus/arw/model/src/util/convert.intel/metgrid/src/metgrid.exe
++ cd /scratch/lus/tmp/slurm.7594822
+++ echo 2026081812
+++ cut -c9-10
++ export CYCLE=12
++ CYCLE=12
++ rm -f /scratch/lus/tmp/arw/day//r12/OK.MPAS2WRF.2026081812
+++ echo 2026081812
+++ cut -c1-4
++ export START_YEAR=2026
++ START_YEAR=2026
+++ echo 2026081812
+++ cut -c5-6
++ export START_MONTH=08
++ START_MONTH=08
+++ echo 2026081812
+++ cut -c7-8
++ export START_DAY=18
++ START_DAY=18
+++ echo 2026081812
+++ cut -c9-10
++ export START_HOUR=12
++ START_HOUR=12
+++ /scratch/lus/dev/bin/smsdate +189 2026081812
++ export ACTUAL_DATE=2026082609
++ ACTUAL_DATE=2026082609
+++ echo 2026082609
+++ cut -c1-4
++ export ACTUAL_YEAR=2026
++ ACTUAL_YEAR=2026
+++ echo 2026082609
+++ cut -c5-6
++ export ACTUAL_MONTH=08
++ ACTUAL_MONTH=08
+++ echo 2026082609
+++ cut -c7-8
++ export ACTUAL_DAY=26
++ ACTUAL_DAY=26
+++ echo 2026082609
+++ cut -c9-10
++ export ACTUAL_HOUR=09
++ ACTUAL_HOUR=09
++ case "${MPAS_RESOLUTION:?MPAS_RESOLUTION not set}" in
++ XNN=x1
++ NUM=4096002
++ DT=72.0
++ DX=12000.0
++ UPWIND=0.0
++ DUST=.dust
++ export MPAS_GRID=x1.4096002.static.dust.nc
++ MPAS_GRID=x1.4096002.static.dust.nc
++ export PNETCDF_SAFE_MODE=0
++ PNETCDF_SAFE_MODE=0
++ export STRIPE=8
++ STRIPE=8
++ export STRIPE_UNIT=8388608
++ STRIPE_UNIT=8388608
++ export CB_NODES=4
++ CB_NODES=4
++ OUTDIR=/scratch/lus/tmp/arw/day//r12
++ command -v lfs
++ lfs setstripe -c 8 -S 8388608 /scratch/lus/tmp/arw/day//r12
++ export 'MPICH_MPIIO_HINTS=/scratch/lus/tmp/arw/day//r12/met_em*:striping_factor=8:striping_unit=8388608:cb_nodes=4:cray_cb_nodes_multiplier=4:cray_cb_write_lock_mode=2'
++ MPICH_MPIIO_HINTS='/scratch/lus/tmp/arw/day//r12/met_em*:striping_factor=8:striping_unit=8388608:cb_nodes=4:cray_cb_nodes_multiplier=4:cray_cb_write_lock_mode=2'
++ sed -e s/BASE_DATE/2026-08-18_12/g -e s/YEAR/2026/g -e s/MONTH/08/g -e s/DAY/26/g -e s/HOUR/09/g -e s/DOMAIN/GLOBAL/g -e s/CYCLE/12/g -e s/VERSION/4.7.1/g -e s/COMPILER/intel/g -e s/LBC_FREQUENCY/3600/g -e s/MPAS_GRID/x1.4096002.static.dust.nc/g -e s/XNN/x1/g -e s/NUM/4096002/g -e s/DUST/.dust/g -e s/COMPILER/intel/g /scratch/lus/arw/model/name/wrf/4.7.1/namelist.metgrid.mpas2wrf
++ echo '----- namelist.wps -----'
+----- namelist.wps -----
++ cat namelist.wps
+&share
+ wrf_core = 'ARW',
+ max_dom = 1,
+ base_date  = '2026-08-18_12:00:00'
+ start_date = '2026-08-26_09:00:00',
+ end_date   = '2026-08-26_09:00:00',
+ interval_seconds = 3600,
+ io_form_geogrid = 2,
+ opt_output_from_geogrid_path = '/scratch/lus/arw/model/wps/domains/GLOBAL/geogrid/modis/4.7.1',
+ debug_level = 0,
+ nocolons = .true.,
+/
+&geogrid
+ parent_id         =   1,
+ parent_grid_ratio =   1,
+ i_parent_start    =   1,
+ j_parent_start    =   1,
+ s_we              =   1,
+ s_sn              =   1,
+ e_we          = 3601,
+ e_sn          = 1801,
+ geog_data_res = 'default',
+ dx = 0.1,
+ dy = 0.1,
+ map_proj  = 'lat-lon',
+ ref_lat   = 0.,
+ ref_lon   = 0.,
+ stand_lon = 0.,
+ geog_data_path = '/scratch/lus/arw/model/wps/WPS_GEOG',
+ opt_geogrid_tbl_path = '/scratch/lus/arw/model/src/util/convert.intel/geogrid/',
+/
+
+&metgrid
+ constants_name = 'mpas:x1.4096002.static.dust.nc',
+ fg_name = 'mpas:MPAS',
+ io_form_metgrid = 11,
+ opt_output_from_metgrid_path = '/scratch/lus/tmp/arw/day/r12',
+ opt_metgrid_tbl_path = '/scratch/lus/arw/model/src/util/convert.intel/metgrid/',
+/
++ echo ------------------------
+------------------------
+++ printf %03d 189
++ ln -sf /scratch/lus/arw/model/log/mpas2wrf.189.log metgrid.log.0000
++ ln -sf /scratch/lus/arw/model/src/mpas/meshes/12//x1.4096002.static.dust.nc .
++ TARGET=/scratch/lus/tmp/arw/day//r12/MPAS.2026-08-26_09.nc
++ MIN_BYTES=20480000000
++ echo 'Waiting for: /scratch/lus/tmp/arw/day//r12/MPAS.2026-08-26_09.nc'
+Waiting for: /scratch/lus/tmp/arw/day//r12/MPAS.2026-08-26_09.nc
++ (( i=0 ))
++ (( i<180 ))
++ [[ -f /scratch/lus/tmp/arw/day//r12/MPAS.2026-08-26_09.nc ]]
+++ stat -c %s /scratch/lus/tmp/arw/day//r12/MPAS.2026-08-26_09.nc
++ sz=35344499276
++ ((  sz > MIN_BYTES  ))
++ ln -sf /scratch/lus/tmp/arw/day//r12/MPAS.2026-08-26_09.nc .
++ echo 'File ready (35344499276 bytes): /scratch/lus/tmp/arw/day//r12/MPAS.2026-08-26_09.nc'
+File ready (35344499276 bytes): /scratch/lus/tmp/arw/day//r12/MPAS.2026-08-26_09.nc
++ break
++ ((  i == 180  ))
++ OUTFILE=/scratch/lus/tmp/arw/day//r12/mpsout.d01.2026-08-26_09_00_00.nc
++ [[ -f /scratch/lus/tmp/arw/day//r12/mpsout.d01.2026-08-26_09_00_00.nc ]]
+++ stat -c %s /scratch/lus/tmp/arw/day//r12/mpsout.d01.2026-08-26_09_00_00.nc
++ outsz=29705775324
++ [[ -n 24000000000 ]]
++ ((  outsz > MPASOUT_FILE_SIZE  ))
++ echo 'Output already exists and is large enough (29705775324 > 24000000000). Exiting.'
+Output already exists and is large enough (29705775324 > 24000000000). Exiting.
++ exit 0
